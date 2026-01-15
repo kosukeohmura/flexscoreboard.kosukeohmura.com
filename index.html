@@ -154,6 +154,37 @@
       width: auto;
     }
 
+    /* Stats Section */
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .stat-number .highlight {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+    }
+
     /* Phone Mockup */
     .phone-section {
       position: relative;
@@ -320,6 +351,10 @@
       .phone-container {
         max-width: 300px;
       }
+
+      .stats {
+        justify-content: center;
+      }
     }
 
     @media (max-width: 640px) {
@@ -354,6 +389,20 @@
         width: 44px;
         height: 44px;
       }
+
+      .stats {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .stat-number {
+        font-size: 1.75rem;
+      }
+
+      .stat-label {
+        font-size: 0.875rem;
+      }
     }
   </style>
 </head>
@@ -384,6 +433,18 @@
       <p class="hero-description">
         Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.
       </p>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-number"><span class="highlight">150K+</span></span>
+          <span class="stat-label">downloads</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number"><span class="highlight">4.5★</span></span>
+          <span class="stat-label">rating</span>
+        </div>
+      </div>
+
       <a href="https://itunes.apple.com/app/id1453457844?mt=8" class="download-button" aria-label="Download on the App Store">
         <img src="badgeappstore.png" alt="Download on the App Store">
       </a>
