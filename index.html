@@ -1,102 +1,468 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>FlexScoreboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta
-      name="description"
-      content="It can be used for various purposes such as table tennis, badminton, volleyball, futsal, pool game, and other various games."
-    />
-    <meta
-      name="keywords"
-      content="FlexScoreboard,simple,scoreboard,score,counter,multiplayer,stopwatch,timer,free,table tennis"
-    />
-    <meta name="og:locale" property="og:locale" content="en_US" />
-    <meta name="og:type" property="og:type" content="website" />
-    <meta
-      name="og:site_name"
-      property="og:site_name"
-      content="FlexScoreboard"
-    />
-    <meta name="og:title" property="og:title" content="FlexScoreboard" />
-    <meta
-      name="og:description"
-      property="og:description"
-      content="Free, simple scoreboard easy to use."
-    />
-    <meta
-      name="og:image"
-      property="og:image"
-      content="https://flexscoreboard.kosukeohmura.com/appicon.png"
-    />
-    <meta name="og:image:type" property="og:image:type" content="image/png" />
-    <meta name="og:image:width" property="og:image:width" content="1024" />
-    <meta name="og:image:height" property="og:image:height" content="1024" />
-    <meta name="apple-itunes-app" content="app-id=1453457844" />
-  </head>
-  <body>
-    <div>
-      <div class="dark">
-        <div
-          class="blurred-cover"
-          style="background-color:rgb(140,140,143);background-image:none;filter:none;-webkit-filter:none;"
-        ></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>FlexScoreboard — Score Any Game</title>
+  <meta name="description" content="Score any game with up to 8 teams. Simple, powerful, and flexible.">
+  <meta name="keywords" content="FlexScoreboard,scoreboard,score,counter,multiplayer,stopwatch,timer,table tennis,sports">
+
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FlexScoreboard">
+  <meta property="og:title" content="FlexScoreboard — Score Any Game">
+  <meta property="og:description" content="Score any game with up to 8 teams. Simple, powerful, and flexible.">
+  <meta property="og:image" content="https://flexscoreboard.kosukeohmura.com/appicon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+
+  <!-- Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=1453457844">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --accent: #0066FF;
+      --bg: #FFFFFF;
+      --text: #000000;
+      --text-secondary: #666666;
+      --border: #E5E5E7;
+      --footer-text: #999999;
+      --accent-bg: rgba(0, 102, 255, 0.03);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #FFFFFF;
+        --text-secondary: #AAAAAA;
+        --border: #2A2A2A;
+        --footer-text: #666666;
+        --accent-bg: rgba(0, 102, 255, 0.08);
+      }
+    }
+
+    [data-theme="light"] {
+      --bg: #FFFFFF;
+      --text: #000000;
+      --text-secondary: #666666;
+      --border: #E5E5E7;
+      --footer-text: #999999;
+      --accent-bg: rgba(0, 102, 255, 0.03);
+    }
+
+    [data-theme="dark"] {
+      --bg: #000000;
+      --text: #FFFFFF;
+      --text-secondary: #AAAAAA;
+      --border: #2A2A2A;
+      --footer-text: #666666;
+      --accent-bg: rgba(0, 102, 255, 0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 0 8vw;
+      gap: 4rem;
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .app-badge img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .hero-title {
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 2rem;
+      color: var(--text);
+    }
+
+    .hero-title .accent {
+      color: var(--accent);
+      display: block;
+    }
+
+    .hero-description {
+      font-size: clamp(1.125rem, 2vw, 1.5rem);
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      max-width: 480px;
+    }
+
+    .download-button {
+      display: inline-block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .download-button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .download-button img {
+      height: 60px;
+      width: auto;
+    }
+
+    /* Phone Mockup */
+    .phone-section {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeInUp 1s ease 0.2s forwards;
+    }
+
+    .phone-container {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      transform: rotate(-2deg);
+      transition: transform 0.4s ease;
+    }
+
+    .phone-container:hover {
+      transform: rotate(0deg) scale(1.02);
+    }
+
+    .phone-mockup {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.15));
+    }
+
+    /* Accent Background Element */
+    .accent-block {
+      position: fixed;
+      top: -20%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: var(--accent);
+      opacity: 1;
+      border-radius: 50%;
+      z-index: -1;
+      animation: float 20s ease-in-out infinite;
+      mix-blend-mode: screen;
+    }
+
+    [data-theme="light"] .accent-block {
+      opacity: 0.03;
+      mix-blend-mode: normal;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme]) .accent-block {
+        opacity: 0.03;
+        mix-blend-mode: normal;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) .accent-block {
+        opacity: 0.08;
+        mix-blend-mode: screen;
+      }
+    }
+
+    [data-theme="dark"] .accent-block {
+      opacity: 0.08;
+      mix-blend-mode: screen;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      background: var(--accent-bg);
+      border: 1px solid var(--border);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 100;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      background: rgba(0, 102, 255, 0.1);
+    }
+
+    .theme-toggle svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--text);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 4rem 8vw;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--footer-text);
+      border-top: 1px solid var(--border);
+      max-width: 1600px;
+      margin: 4rem auto 0;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .footer a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      33% {
+        transform: translate(30px, -30px) rotate(5deg);
+      }
+      66% {
+        transform: translate(-20px, 20px) rotate(-5deg);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 4rem 6vw;
+        gap: 3rem;
+      }
+
+      .hero-content {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .app-badge {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .phone-section {
+        justify-content: center;
+      }
+
+      .phone-container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 3rem 5vw;
+      }
+
+      .hero-title {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+      }
+
+      .hero-description {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+      }
+
+      .download-button img {
+        height: 50px;
+      }
+
+      .phone-container {
+        max-width: 260px;
+      }
+
+      .footer {
+        padding: 3rem 5vw;
+      }
+
+      .theme-toggle {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <svg id="sunIcon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/>
+    </svg>
+    <svg id="moonIcon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+      <path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/>
+    </svg>
+  </button>
+
+  <div class="accent-block"></div>
+
+  <main class="hero">
+    <div class="hero-content">
+      <div class="app-badge">
+        <img src="appicon.png" alt="FlexScoreboard icon">
+        <span>FlexScoreboard</span>
       </div>
-      <main id="main">
-        <section id="hero">
-          <div class="container">
-            <div class="row">
-              <div class="app-content">
-                <h2 class="app-name">FlexScoreboard</h2>
-                <h1 class="app-tagline">Free, simple scoreboard<br />easy to use.</h1>
-                <div class="app-description">
-                  <p>
-                    It can be used for various purposes such as table tennis, badminton, volleyball, futsal, pool game and other various games.
-                  </p>
-                </div>
-                <div class="app-links">
-                  <a
-                    class="app-link"
-                    id="appleLink"
-                    href="https://itunes.apple.com/app/id1453457844?mt=8"
-                    ><img class="app-icon" src="badgeappstore.png"
-                  /></a>
-                </div>
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Kosuke Ohmura, All Rights Reserved.
-                  <a
-                    class="footer-link"
-                    style="color:white; border-bottom: solid 1px;"
-                    href="mailto:flexscoreboard@kosukeohmura.com"
-                    >Contact</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer id="footer">
-          <div class="phone-container container">
-            <div class="phone-wrapper">
-              <img src="phoneframe.png" class="phone-frame" />
-              <div id="carousel" class="carousel fade" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="screenshot.png" alt="screenshot.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </main>
+      <h1 class="hero-title">
+        Score<br>
+        Any<br>
+        <span class="accent">Game</span>
+      </h1>
+      <p class="hero-description">
+        Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.
+      </p>
+      <a href="https://itunes.apple.com/app/id1453457844?mt=8" class="download-button" aria-label="Download on the App Store">
+        <img src="badgeappstore.png" alt="Download on the App Store">
+      </a>
     </div>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9507ea74c24f48fa95cf15ce3b569c97"}'></script><!-- End Cloudflare Web Analytics -->
-  </body>
+
+    <div class="phone-section">
+      <div class="phone-container">
+        <img src="iphone.png" alt="FlexScoreboard app interface showing score tracking" class="phone-mockup">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; 2019 Kosuke Ohmura. All Rights Reserved.
+      <span style="margin: 0 1rem;">·</span>
+      <a href="mailto:flexscoreboard@kosukeohmura.com">Contact</a>
+    </p>
+  </footer>
+
+  <!-- Theme Switcher -->
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      html.setAttribute('data-theme', savedTheme);
+      updateIcons(savedTheme);
+    } else {
+      // Show appropriate icon based on system preference
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      updateIcons(systemTheme);
+    }
+
+    function updateIcons(theme) {
+      if (theme === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      }
+    }
+
+    function getEffectiveTheme() {
+      const dataTheme = html.getAttribute('data-theme');
+      if (dataTheme) return dataTheme;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = getEffectiveTheme();
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcons(newTheme);
+    });
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        updateIcons(e.matches ? 'dark' : 'light');
+      }
+    });
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9507ea74c24f48fa95cf15ce3b569c97"}'></script>
+
+</body>
 </html>
