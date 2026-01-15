@@ -297,6 +297,16 @@
       border-bottom-color: var(--accent);
     }
 
+    .footer .author-link {
+      color: var(--footer-text);
+      border-bottom: 1px solid var(--footer-text);
+    }
+
+    .footer .author-link:hover {
+      color: var(--text);
+      border-bottom-color: var(--text);
+    }
+
     /* Animations */
     @keyframes fadeInUp {
       from {
@@ -445,7 +455,7 @@
         </div>
       </div>
 
-      <a href="https://itunes.apple.com/app/id1453457844?mt=8" class="download-button" aria-label="Download on the App Store">
+      <a href="https://itunes.apple.com/app/id1453457844?mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
         <img src="badgeappstore.png" alt="Download on the App Store">
       </a>
     </div>
@@ -459,7 +469,7 @@
 
   <footer class="footer">
     <p>
-      &copy; 2019 Kosuke Ohmura. All Rights Reserved.
+      &copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.
       <span style="margin: 0 1rem;">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com">Contact</a>
     </p>
