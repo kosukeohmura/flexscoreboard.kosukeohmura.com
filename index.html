@@ -246,12 +246,19 @@
       mix-blend-mode: screen;
     }
 
-    /* Theme Toggle */
-    .theme-toggle {
+    /* Top Controls */
+    .top-controls {
       position: fixed;
       top: 2rem;
       right: 2rem;
-      background: var(--accent-bg);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 100;
+    }
+
+    .theme-toggle {
+      background: var(--bg);
       border: 1px solid var(--border);
       width: 48px;
       height: 48px;
@@ -261,7 +268,6 @@
       justify-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
-      z-index: 100;
     }
 
     .theme-toggle:hover {
@@ -305,6 +311,22 @@
     .footer .author-link:hover {
       color: var(--text);
       border-bottom-color: var(--text);
+    }
+
+    /* Language Selector */
+    .language-selector {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border-radius: 24px;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .language-selector:hover {
+      background: rgba(0, 102, 255, 0.1);
     }
 
     /* Animations */
@@ -393,11 +415,20 @@
         padding: 3rem 5vw;
       }
 
-      .theme-toggle {
+      .top-controls {
         top: 1.5rem;
         right: 1.5rem;
+        gap: 0.5rem;
+      }
+
+      .theme-toggle {
         width: 44px;
         height: 44px;
+      }
+
+      .language-selector {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
       }
 
       .stats {
@@ -418,22 +449,30 @@
 </head>
 <body>
 
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-    <svg id="sunIcon" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/>
-    </svg>
-    <svg id="moonIcon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-      <path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/>
-    </svg>
-  </button>
+  <div class="top-controls">
+    <select id="languageSelector" class="language-selector" aria-label="Select language">
+      <option value="en">🇺🇸 English</option>
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="zh">🇨🇳 中文</option>
+      <option value="th">🇹🇭 ไทย</option>
+    </select>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg id="sunIcon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/>
+      </svg>
+      <svg id="moonIcon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+        <path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/>
+      </svg>
+    </button>
+  </div>
 
   <div class="accent-block"></div>
 
   <main class="hero">
     <div class="hero-content">
       <div class="app-badge">
-        <img src="appicon.png" alt="FlexScoreboard icon">
-        <span>FlexScoreboard</span>
+        <img src="appicon.png" alt="Scoreboard icon">
+        <span>Scoreboard</span>
       </div>
       <h1 class="hero-title">
         Score<br>
@@ -451,7 +490,7 @@
         </div>
         <div class="stat-item">
           <span class="stat-number"><span class="highlight">4.5★</span></span>
-          <span class="stat-label">rating</span>
+          <span class="stat-label">worldwide</span>
         </div>
       </div>
 
@@ -471,7 +510,7 @@
     <p>
       &copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.
       <span style="margin: 0 1rem;">·</span>
-      <a href="mailto:flexscoreboard@kosukeohmura.com">Contact</a>
+      <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">Contact</a>
     </p>
   </footer>
 
@@ -523,6 +562,87 @@
       if (!localStorage.getItem('theme')) {
         updateIcons(e.matches ? 'dark' : 'light');
       }
+    });
+  </script>
+
+  <!-- Internationalization -->
+  <script>
+    const translations = {
+      en: {
+        appName: "Scoreboard",
+        heroTitle: ["Score", "Any", "Game"],
+        description: "Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.",
+        downloads: "downloads",
+        worldwide: "worldwide",
+        contact: "Contact"
+      },
+      ja: {
+        appName: "Scoreboard",
+        heroTitle: ["スコアを", "記録", "しよう"],
+        description: "最大 8 チームまでのゲームスコアを記録。シンプルなタップ操作、内蔵タイマー、瞬時のスコア追跡。無料でダウンロード。",
+        downloads: "ダウンロード",
+        worldwide: "世界平均",
+        contact: "お問い合わせ"
+      },
+      zh: {
+        appName: "多功能记分板",
+        heroTitle: ["记录", "任何", "比赛"],
+        description: "记录最多 8 支队伍的任何比赛。简单点击控制、内置计时器、即时分数追踪。免费下载。",
+        downloads: "下载量",
+        worldwide: "全球评分",
+        contact: "联系我们"
+      },
+      th: {
+        appName: "Scoreboard",
+        heroTitle: ["บันทึก", "ทุก", "เกม"],
+        description: "บันทึกคะแนนเกมใดก็ได้สูงสุด 8 ทีม ควบคุมง่ายด้วยการแตะ มีตัวจับเวลาในตัว ติดตามคะแนนทันที ดาวน์โหลดฟรี",
+        downloads: "ดาวน์โหลด",
+        worldwide: "ทั่วโลก",
+        contact: "ติดต่อ"
+      }
+    };
+
+    function detectLanguage() {
+      const browserLang = navigator.language.split('-')[0];
+      return translations[browserLang] ? browserLang : 'en';
+    }
+
+    function applyTranslation(lang) {
+      const t = translations[lang];
+
+      // Update app name
+      document.querySelector('.app-badge span').textContent = t.appName;
+
+      // Update hero title
+      const heroTitle = document.querySelector('.hero-title');
+      heroTitle.innerHTML = `${t.heroTitle[0]}<br>${t.heroTitle[1]}<br><span class="accent">${t.heroTitle[2]}</span>`;
+
+      // Update description
+      document.querySelector('.hero-description').textContent = t.description;
+
+      // Update stats labels
+      document.querySelectorAll('.stat-label')[0].textContent = t.downloads;
+      document.querySelectorAll('.stat-label')[1].textContent = t.worldwide;
+
+      // Update contact link text
+      document.querySelector('.contact-link').textContent = t.contact;
+
+      // Update html lang attribute
+      document.documentElement.lang = lang;
+    }
+
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentLang = detectLanguage();
+      applyTranslation(currentLang);
+
+      // Set dropdown to current language
+      document.getElementById('languageSelector').value = currentLang;
+
+      // Add change event listener
+      document.getElementById('languageSelector').addEventListener('change', (e) => {
+        applyTranslation(e.target.value);
+      });
     });
   </script>
 
