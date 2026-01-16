@@ -578,24 +578,24 @@
       },
       ja: {
         appName: "Scoreboard",
-        heroTitle: ["スコアを", "記録", "しよう"],
-        description: "最大 8 チームまでのゲームスコアを記録。シンプルなタップ操作、内蔵タイマー、瞬時のスコア追跡。無料でダウンロード。",
+        heroTitle: ["スコアを", "つけよう"],
+        description: "スポーツも、ボードゲームも、どんな勝負も。タップだけでスコアを記録。8 チームまで対応、無料でダウンロード。",
         downloads: "ダウンロード",
         worldwide: "世界平均",
         contact: "お問い合わせ"
       },
       zh: {
         appName: "多功能记分板",
-        heroTitle: ["记录", "任何", "比赛"],
-        description: "记录最多 8 支队伍的任何比赛。简单点击控制、内置计时器、即时分数追踪。免费下载。",
+        heroTitle: ["任何比赛", "轻松记分"],
+        description: "运动比赛、桌游对战，一个 App 轻松搞定。点一点就能记分，最多 8 队。免费下载。",
         downloads: "下载量",
         worldwide: "全球评分",
         contact: "联系我们"
       },
       th: {
         appName: "Scoreboard",
-        heroTitle: ["บันทึก", "ทุก", "เกม"],
-        description: "บันทึกคะแนนเกมใดก็ได้สูงสุด 8 ทีม ควบคุมง่ายด้วยการแตะ มีตัวจับเวลาในตัว ติดตามคะแนนทันที ดาวน์โหลดฟรี",
+        heroTitle: ["เก็บ", "ทุก", "คะแนน"],
+        description: "ไม่ว่าเกมอะไร บันทึกคะแนนง่ายๆ แค่แตะ รองรับถึง 8 ทีม ฟรี!",
         downloads: "ดาวน์โหลด",
         worldwide: "ทั่วโลก",
         contact: "ติดต่อ"
@@ -613,9 +613,11 @@
       // Update app name
       document.querySelector('.app-badge span').textContent = t.appName;
 
-      // Update hero title
+      // Update hero title (handles 2 or 3 line titles)
       const heroTitle = document.querySelector('.hero-title');
-      heroTitle.innerHTML = `${t.heroTitle[0]}<br>${t.heroTitle[1]}<br><span class="accent">${t.heroTitle[2]}</span>`;
+      const titleParts = t.heroTitle.slice(0, -1).join('<br>');
+      const lastPart = t.heroTitle[t.heroTitle.length - 1];
+      heroTitle.innerHTML = `${titleParts}<br><span class="accent">${lastPart}</span>`;
 
       // Update description
       document.querySelector('.hero-description').textContent = t.description;
