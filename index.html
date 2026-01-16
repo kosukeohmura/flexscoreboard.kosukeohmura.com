@@ -286,6 +286,18 @@
       margin: 4rem auto 0;
     }
 
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .footer-separator {
+      margin: 0 0.5rem;
+    }
+
     .footer a {
       color: var(--accent);
       text-decoration: none;
@@ -409,6 +421,15 @@
         padding: 3rem 5vw;
       }
 
+      .footer-content {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .footer-separator {
+        display: none;
+      }
+
       .theme-toggle {
         top: 1.5rem;
         right: 1.5rem;
@@ -484,18 +505,18 @@
   </main>
 
   <footer class="footer">
-    <p>
+    <div class="footer-content">
       <select id="languageSelector" class="language-selector" aria-label="Select language">
         <option value="en">🇺🇸 English</option>
         <option value="ja">🇯🇵 日本語</option>
         <option value="zh">🇨🇳 中文</option>
         <option value="th">🇹🇭 ไทย</option>
       </select>
-      <span style="margin: 0 1rem;">·</span>
-      &copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.
-      <span style="margin: 0 1rem;">·</span>
+      <span class="footer-separator">·</span>
+      <span class="footer-copyright">&copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.</span>
+      <span class="footer-separator">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">Contact</a>
-    </p>
+    </div>
   </footer>
 
   <!-- Theme Switcher -->
