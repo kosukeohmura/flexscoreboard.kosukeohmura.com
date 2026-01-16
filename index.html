@@ -532,7 +532,15 @@
 
     <div class="phone-section">
       <div class="phone-container">
-        <img src="iphone.webp" alt="FlexScoreboard app interface showing score tracking" class="phone-mockup" width="710" height="1398" loading="lazy">
+        <img
+          src="iphone-m.webp"
+          srcset="iphone-s.webp 355w, iphone-m.webp 710w, iphone-l.webp 1419w"
+          sizes="(max-width: 640px) 260px, (max-width: 1024px) 300px, 380px"
+          alt="FlexScoreboard app interface showing score tracking"
+          class="phone-mockup"
+          width="710"
+          height="1398"
+          fetchpriority="high">
       </div>
     </div>
   </main>
