@@ -654,7 +654,10 @@
     }
 
     function applyTranslation(lang) {
+      if (document.documentElement.lang === lang) return;
+
       const t = translations[lang];
+      if (!t) return;
 
       // Update app name
       document.querySelector('.app-badge span').textContent = t.appName;
