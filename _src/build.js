@@ -34,6 +34,11 @@ function buildLangOptions(currentLang) {
   }).join('\n        ');
 }
 
+function buildAppStoreUrl(lang) {
+  const langParam = lang.toLowerCase().replace(/[^a-z]/g, '');
+  return `https://apps.apple.com/app/apple-store/id1453457844?pt=119669481&ct=lp_${langParam}&mt=8`;
+}
+
 function buildPage(lang) {
   const t = translations[lang];
   let html = template;
@@ -54,6 +59,7 @@ function buildPage(lang) {
     '{{heroTitleHtml}}': buildHeroTitleHtml(t.heroTitle),
     '{{hreflangTags}}': buildHreflangTags(),
     '{{langOptions}}': buildLangOptions(lang),
+    '{{appStoreUrl}}': buildAppStoreUrl(lang),
   };
 
   for (const [placeholder, value] of Object.entries(replacements)) {
