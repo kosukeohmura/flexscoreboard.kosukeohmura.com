@@ -15,7 +15,22 @@
   <link rel="alternate" hreflang="en" href="https://flexscoreboard.kosukeohmura.com/">
   <link rel="alternate" hreflang="ja" href="https://flexscoreboard.kosukeohmura.com/ja/">
   <link rel="alternate" hreflang="zh" href="https://flexscoreboard.kosukeohmura.com/zh/">
+  <link rel="alternate" hreflang="zh-TW" href="https://flexscoreboard.kosukeohmura.com/zh-TW/">
   <link rel="alternate" hreflang="th" href="https://flexscoreboard.kosukeohmura.com/th/">
+  <link rel="alternate" hreflang="de" href="https://flexscoreboard.kosukeohmura.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://flexscoreboard.kosukeohmura.com/fr/">
+  <link rel="alternate" hreflang="es" href="https://flexscoreboard.kosukeohmura.com/es/">
+  <link rel="alternate" hreflang="ko" href="https://flexscoreboard.kosukeohmura.com/ko/">
+  <link rel="alternate" hreflang="pt" href="https://flexscoreboard.kosukeohmura.com/pt/">
+  <link rel="alternate" hreflang="it" href="https://flexscoreboard.kosukeohmura.com/it/">
+  <link rel="alternate" hreflang="ru" href="https://flexscoreboard.kosukeohmura.com/ru/">
+  <link rel="alternate" hreflang="id" href="https://flexscoreboard.kosukeohmura.com/id/">
+  <link rel="alternate" hreflang="nl" href="https://flexscoreboard.kosukeohmura.com/nl/">
+  <link rel="alternate" hreflang="vi" href="https://flexscoreboard.kosukeohmura.com/vi/">
+  <link rel="alternate" hreflang="tr" href="https://flexscoreboard.kosukeohmura.com/tr/">
+  <link rel="alternate" hreflang="pl" href="https://flexscoreboard.kosukeohmura.com/pl/">
+  <link rel="alternate" hreflang="sv" href="https://flexscoreboard.kosukeohmura.com/sv/">
+  <link rel="alternate" hreflang="hi" href="https://flexscoreboard.kosukeohmura.com/hi/">
   <link rel="alternate" hreflang="x-default" href="https://flexscoreboard.kosukeohmura.com/">
 
   <!-- Open Graph -->
@@ -338,32 +353,21 @@
 
     /* Language Selector */
     .language-selector {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .language-selector a {
+      background: transparent;
+      border: 1px solid var(--border);
       color: var(--footer-text);
-      text-decoration: none;
       padding: 0.25rem 0.5rem;
       border-radius: 4px;
-      border: 1px solid transparent;
+      font-size: 0.875rem;
+      cursor: pointer;
       transition: all 0.2s ease;
     }
 
-    .language-selector a:hover {
+    .language-selector:hover {
       background: rgba(0, 102, 255, 0.1);
-      border-color: var(--border);
     }
 
-    .language-selector a[aria-current="page"] {
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-
-    .language-selector a:focus-visible {
+    .language-selector:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 2px;
     }
@@ -566,12 +570,27 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <div class="language-selector">
-        <a href="/" aria-current="page">English</a>
-        <a href="/ja/" >日本語</a>
-        <a href="/zh/" >中文</a>
-        <a href="/th/" >ไทย</a>
-      </div>
+      <select id="languageSelector" class="language-selector" aria-label="Select language">
+        <option value="/" selected>English</option>
+        <option value="/ja/">日本語</option>
+        <option value="/zh/">简体中文</option>
+        <option value="/zh-TW/">繁體中文</option>
+        <option value="/th/">ไทย</option>
+        <option value="/de/">Deutsch</option>
+        <option value="/fr/">Français</option>
+        <option value="/es/">Español</option>
+        <option value="/ko/">한국어</option>
+        <option value="/pt/">Português</option>
+        <option value="/it/">Italiano</option>
+        <option value="/ru/">Русский</option>
+        <option value="/id/">Indonesia</option>
+        <option value="/nl/">Nederlands</option>
+        <option value="/vi/">Tiếng Việt</option>
+        <option value="/tr/">Türkçe</option>
+        <option value="/pl/">Polski</option>
+        <option value="/sv/">Svenska</option>
+        <option value="/hi/">हिन्दी</option>
+      </select>
       <span class="footer-separator">·</span>
       <span class="footer-copyright">&copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.</span>
       <span class="footer-separator">·</span>
@@ -627,6 +646,13 @@
       if (!localStorage.getItem('theme')) {
         updateIcons(e.matches ? 'dark' : 'light');
       }
+    });
+  </script>
+
+  <!-- Language Selector -->
+  <script>
+    document.getElementById('languageSelector').addEventListener('change', (e) => {
+      window.location.href = e.target.value;
     });
   </script>
 

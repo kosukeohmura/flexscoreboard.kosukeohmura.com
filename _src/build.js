@@ -10,7 +10,7 @@ const BASE_URL = 'https://flexscoreboard.kosukeohmura.com';
 const template = fs.readFileSync(path.join(__dirname, 'base.html'), 'utf8');
 const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'translations.json'), 'utf8'));
 
-const languages = ['en', 'ja', 'zh', 'th'];
+const languages = Object.keys(translations);
 
 function buildHeroTitleHtml(heroTitle) {
   // All parts except the last one, joined with <br>
@@ -19,13 +19,28 @@ function buildHeroTitleHtml(heroTitle) {
   return `${regularParts}<br>\n        <span class="accent">${accentPart}</span>`;
 }
 
+function buildHreflangTags() {
+  const tags = languages.map(l =>
+    `<link rel="alternate" hreflang="${l}" href="${BASE_URL}${translations[l].path}">`
+  );
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${BASE_URL}/">`);
+  return tags.join('\n  ');
+}
+
+function buildLangOptions(currentLang) {
+  return languages.map(l => {
+    const selected = l === currentLang ? ' selected' : '';
+    return `<option value="${translations[l].path}"${selected}>${translations[l].langName}</option>`;
+  }).join('\n        ');
+}
+
 function buildPage(lang) {
   const t = translations[lang];
   let html = template;
 
   // Replace all placeholders
   const replacements = {
-    '{{lang}}': t.lang,
+    '{{lang}}': lang,
     '{{ogLocale}}': t.ogLocale,
     '{{title}}': t.title,
     '{{appName}}': t.appName,
@@ -37,10 +52,8 @@ function buildPage(lang) {
     '{{rootPath}}': t.rootPath,
     '{{canonicalUrl}}': `${BASE_URL}${t.path}`,
     '{{heroTitleHtml}}': buildHeroTitleHtml(t.heroTitle),
-    '{{langLinkEn}}': lang === 'en' ? 'aria-current="page"' : '',
-    '{{langLinkJa}}': lang === 'ja' ? 'aria-current="page"' : '',
-    '{{langLinkZh}}': lang === 'zh' ? 'aria-current="page"' : '',
-    '{{langLinkTh}}': lang === 'th' ? 'aria-current="page"' : '',
+    '{{hreflangTags}}': buildHreflangTags(),
+    '{{langOptions}}': buildLangOptions(lang),
   };
 
   for (const [placeholder, value] of Object.entries(replacements)) {

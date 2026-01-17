@@ -12,11 +12,7 @@
   <link rel="canonical" href="{{canonicalUrl}}">
 
   <!-- hreflang for SEO -->
-  <link rel="alternate" hreflang="en" href="https://flexscoreboard.kosukeohmura.com/">
-  <link rel="alternate" hreflang="ja" href="https://flexscoreboard.kosukeohmura.com/ja/">
-  <link rel="alternate" hreflang="zh" href="https://flexscoreboard.kosukeohmura.com/zh/">
-  <link rel="alternate" hreflang="th" href="https://flexscoreboard.kosukeohmura.com/th/">
-  <link rel="alternate" hreflang="x-default" href="https://flexscoreboard.kosukeohmura.com/">
+  {{hreflangTags}}
 
   <!-- Open Graph -->
   <meta property="og:locale" content="{{ogLocale}}">
@@ -338,32 +334,21 @@
 
     /* Language Selector */
     .language-selector {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .language-selector a {
+      background: transparent;
+      border: 1px solid var(--border);
       color: var(--footer-text);
-      text-decoration: none;
       padding: 0.25rem 0.5rem;
       border-radius: 4px;
-      border: 1px solid transparent;
+      font-size: 0.875rem;
+      cursor: pointer;
       transition: all 0.2s ease;
     }
 
-    .language-selector a:hover {
+    .language-selector:hover {
       background: rgba(0, 102, 255, 0.1);
-      border-color: var(--border);
     }
 
-    .language-selector a[aria-current="page"] {
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-
-    .language-selector a:focus-visible {
+    .language-selector:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 2px;
     }
@@ -564,12 +549,9 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <div class="language-selector">
-        <a href="/" {{langLinkEn}}>English</a>
-        <a href="/ja/" {{langLinkJa}}>日本語</a>
-        <a href="/zh/" {{langLinkZh}}>中文</a>
-        <a href="/th/" {{langLinkTh}}>ไทย</a>
-      </div>
+      <select id="languageSelector" class="language-selector" aria-label="Select language">
+        {{langOptions}}
+      </select>
       <span class="footer-separator">·</span>
       <span class="footer-copyright">&copy; 2019 <a href="https://kosukeohmura.com" class="author-link" target="_blank" rel="noopener">Kosuke Ohmura</a>. All Rights Reserved.</span>
       <span class="footer-separator">·</span>
@@ -625,6 +607,13 @@
       if (!localStorage.getItem('theme')) {
         updateIcons(e.matches ? 'dark' : 'light');
       }
+    });
+  </script>
+
+  <!-- Language Selector -->
+  <script>
+    document.getElementById('languageSelector').addEventListener('change', (e) => {
+      window.location.href = e.target.value;
     });
   </script>
 
