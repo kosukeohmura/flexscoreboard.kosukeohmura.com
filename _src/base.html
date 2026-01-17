@@ -138,6 +138,13 @@
       display: block;
     }
 
+    /* Scripts with tall diacritics need more line-height */
+    :lang(th) .hero-title,
+    :lang(hi) .hero-title,
+    :lang(vi) .hero-title {
+      line-height: 1.15;
+    }
+
     .hero-description {
       font-size: clamp(1.125rem, 2vw, 1.5rem);
       font-weight: 300;
