@@ -1,0 +1,54 @@
+{
+  "en": {
+    "lang": "en",
+    "ogLocale": "en_US",
+    "path": "/",
+    "rootPath": "",
+    "title": "Scoreboard — Score Any Game",
+    "appName": "Scoreboard",
+    "heroTitle": ["Score", "Any", "Game"],
+    "description": "Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.",
+    "downloads": "downloads",
+    "worldwide": "worldwide",
+    "contact": "Contact"
+  },
+  "ja": {
+    "lang": "ja",
+    "ogLocale": "ja_JP",
+    "path": "/ja/",
+    "rootPath": "../",
+    "title": "Scoreboard — スコアをつけよう",
+    "appName": "Scoreboard",
+    "heroTitle": ["スコアを", "つけよう"],
+    "description": "スポーツも、ボードゲームも、どんな勝負も。タップだけでスコアを記録。8 チームまで対応、無料でダウンロード。",
+    "downloads": "ダウンロード",
+    "worldwide": "世界平均",
+    "contact": "お問い合わせ"
+  },
+  "zh": {
+    "lang": "zh",
+    "ogLocale": "zh_CN",
+    "path": "/zh/",
+    "rootPath": "../",
+    "title": "多功能记分板 — 任何比赛轻松记分",
+    "appName": "多功能记分板",
+    "heroTitle": ["任何比赛", "轻松记分"],
+    "description": "运动比赛、桌游对战，一个 App 轻松搞定。点一点就能记分，最多 8 队。免费下载。",
+    "downloads": "下载量",
+    "worldwide": "全球评分",
+    "contact": "联系我们"
+  },
+  "th": {
+    "lang": "th",
+    "ogLocale": "th_TH",
+    "path": "/th/",
+    "rootPath": "../",
+    "title": "Scoreboard — เก็บทุกคะแนน",
+    "appName": "Scoreboard",
+    "heroTitle": ["เก็บ", "ทุก", "คะแนน"],
+    "description": "ไม่ว่าเกมอะไร บันทึกคะแนนง่ายๆ แค่แตะ รองรับถึง 8 ทีม ฟรี!",
+    "downloads": "ดาวน์โหลด",
+    "worldwide": "ทั่วโลก",
+    "contact": "ติดต่อ"
+  }
+}
