@@ -39,6 +39,29 @@ function buildAppStoreUrl(lang) {
   return `https://apps.apple.com/app/apple-store/id1453457844?pt=119669481&ct=lp_${langParam}&mt=8`;
 }
 
+function buildSitemap() {
+  const today = new Date().toISOString().split('T')[0];
+  const urls = languages.map(lang => {
+    const url = `${BASE_URL}${translations[lang].path}`;
+    return `  <url>
+    <loc>${url}</loc>
+    <lastmod>${today}</lastmod>
+  </url>`;
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.join('\n')}
+</urlset>`;
+}
+
+function buildRobotsTxt() {
+  return `User-agent: *
+Allow: /
+
+Sitemap: ${BASE_URL}/sitemap.xml`;
+}
+
 function buildPage(lang) {
   const t = translations[lang];
   let html = template;
@@ -100,5 +123,11 @@ for (const lang of languages) {
   generatedFiles.push(outputPath);
 }
 
+// Generate sitemap.xml
+writeFile(path.join(ROOT_DIR, 'sitemap.xml'), buildSitemap());
+
+// Generate robots.txt
+writeFile(path.join(ROOT_DIR, 'robots.txt'), buildRobotsTxt());
+
 console.log('\nBuild complete!');
-console.log(`Generated ${generatedFiles.length} files.`);
+console.log(`Generated ${generatedFiles.length + 2} files.`);
