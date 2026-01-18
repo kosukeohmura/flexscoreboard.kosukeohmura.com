@@ -95,7 +95,8 @@ function buildPage(lang) {
     html = html.split(placeholder).join(value);
   }
 
-  return html;
+  // Add "do not edit" comment at the top
+  return `<!-- DO NOT EDIT - Generated from template.html -->\n${html}`;
 }
 
 function writeFile(filePath, content) {
