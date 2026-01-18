@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT_DIR = path.join(__dirname, '..');
+const DOCS_DIR = path.join(__dirname, 'docs');
 const BASE_URL = 'https://flexscoreboard.kosukeohmura.com';
 
 // Read template and translations
@@ -105,7 +105,7 @@ function writeFile(filePath, content) {
 
   fs.writeFileSync(filePath, content, 'utf8');
   fs.chmodSync(filePath, 0o444);
-  console.log(`Generated: ${path.relative(ROOT_DIR, filePath)}`);
+  console.log(`Generated: ${path.relative(DOCS_DIR, filePath)}`);
 }
 
 // Build all pages
@@ -116,18 +116,18 @@ const generatedFiles = [];
 for (const lang of languages) {
   const html = buildPage(lang);
   const outputPath = lang === 'en'
-    ? path.join(ROOT_DIR, 'index.html')
-    : path.join(ROOT_DIR, lang, 'index.html');
+    ? path.join(DOCS_DIR, 'index.html')
+    : path.join(DOCS_DIR, lang, 'index.html');
 
   writeFile(outputPath, html);
   generatedFiles.push(outputPath);
 }
 
 // Generate sitemap.xml
-writeFile(path.join(ROOT_DIR, 'sitemap.xml'), buildSitemap());
+writeFile(path.join(DOCS_DIR, 'sitemap.xml'), buildSitemap());
 
 // Generate robots.txt
-writeFile(path.join(ROOT_DIR, 'robots.txt'), buildRobotsTxt());
+writeFile(path.join(DOCS_DIR, 'robots.txt'), buildRobotsTxt());
 
 console.log('\nBuild complete!');
 console.log(`Generated ${generatedFiles.length + 2} files.`);
