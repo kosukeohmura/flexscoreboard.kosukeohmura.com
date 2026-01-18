@@ -9,7 +9,7 @@ Vanilla static HTML with inline CSS and JS. No frameworks, no dependencies.
 ## File Structure
 
 ```
-base.html            # Template
+template.html        # Template
 translations.json    # Translations for all languages
 build.js             # Build script
 docs/
@@ -25,6 +25,6 @@ Source files are at root. All files in `docs/` are generated and should not be e
 
 ## Editing
 
-1. Edit `base.html` (template) or `translations.json` (text, adding a language)
+1. Edit `template.html` or `translations.json` (text, adding a language)
 2. Run `node build.js` to regenerate all pages
 3. (Optional, for new languages) Download localized App Store badge from [Apple Marketing Resources](https://developer.apple.com/app-store/marketing/guidelines/) and add SVG to `docs/<lang>/`

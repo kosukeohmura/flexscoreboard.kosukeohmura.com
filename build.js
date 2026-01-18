@@ -7,10 +7,10 @@ const DOCS_DIR = path.join(__dirname, 'docs');
 const BASE_URL = 'https://flexscoreboard.kosukeohmura.com';
 
 // Read template and translations
-const template = fs.readFileSync(path.join(__dirname, 'base.html'), 'utf8');
+const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'translations.json'), 'utf8'));
 
-const languages = Object.keys(translations);
+const languages = Object.keys(translations).filter(k => k !== '$schema');
 
 function buildHeroTitleHtml(heroTitle) {
   // All parts except the last one, joined with <br>
