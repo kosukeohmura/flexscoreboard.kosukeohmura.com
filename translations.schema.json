@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Translations",
+  "description": "Translations for Scoreboard landing page",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    }
+  },
+  "additionalProperties": {
+    "$ref": "#/$defs/translation"
+  },
+  "$defs": {
+    "translation": {
+      "type": "object",
+      "required": [
+        "langName",
+        "ogLocale",
+        "path",
+        "rootPath",
+        "title",
+        "appName",
+        "heroTitle",
+        "metaDescription",
+        "heroDescription",
+        "downloads",
+        "worldwide",
+        "contact"
+      ],
+      "properties": {
+        "langName": {
+          "type": "string",
+          "description": "Display name of the language (e.g., 'English', '日本語')"
+        },
+        "ogLocale": {
+          "type": "string",
+          "pattern": "^[a-z]{2}_[A-Z]{2}$",
+          "description": "Open Graph locale (e.g., 'en_US', 'ja_JP')"
+        },
+        "path": {
+          "type": "string",
+          "description": "URL path (e.g., '/' for English, '/ja/' for Japanese)"
+        },
+        "rootPath": {
+          "type": "string",
+          "description": "Relative path to root (e.g., '' for root, '../' for subdirectory)"
+        },
+        "title": {
+          "type": "string",
+          "description": "Page title for <title> and og:title"
+        },
+        "appName": {
+          "type": "string",
+          "description": "App name displayed in the badge"
+        },
+        "heroTitle": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2,
+          "description": "Hero title lines. Last item gets accent color."
+        },
+        "metaDescription": {
+          "type": "string",
+          "description": "Meta description for SEO"
+        },
+        "heroDescription": {
+          "type": "string",
+          "description": "Hero section description text"
+        },
+        "downloads": {
+          "type": "string",
+          "description": "Label for downloads stat (e.g., 'downloads', 'ダウンロード')"
+        },
+        "worldwide": {
+          "type": "string",
+          "description": "Label for worldwide stat (e.g., 'worldwide', '世界平均')"
+        },
+        "contact": {
+          "type": "string",
+          "description": "Contact link text (e.g., 'Contact', 'お問い合わせ')"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "$schema": "./translations.schema.json",
   "en": {
     "langName": "English",
     "ogLocale": "en_US",

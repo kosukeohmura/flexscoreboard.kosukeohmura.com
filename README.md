@@ -9,9 +9,10 @@ Vanilla static HTML with inline CSS and JS. No frameworks, no dependencies.
 ## File Structure
 
 ```
-template.html        # Template
-translations.json    # Translations for all languages
-build.js             # Build script
+template.html             # Template
+translations.json         # Translations for all languages
+translations.schema.json  # Schema for translations.json
+build.js                  # Build script
 docs/
   index.html         # Generated (English)
   ja/index.html      # Generated (Japanese)
