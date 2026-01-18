@@ -344,6 +344,143 @@
       fill: var(--text);
     }
 
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 6rem 8vw;
+      max-width: 1600px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 102, 255, 0.02) 50%, transparent 100%);
+    }
+
+    [data-theme="dark"] .features,
+    :root:not([data-theme]) .features {
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 102, 255, 0.03) 50%, transparent 100%);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme]) .features {
+        background: linear-gradient(180deg, transparent 0%, rgba(0, 102, 255, 0.02) 50%, transparent 100%);
+      }
+    }
+
+    .feature-item {
+      text-align: center;
+      padding: 1.5rem 1.25rem;
+      border-radius: 20px;
+      background: rgba(0, 102, 255, 0.06);
+      border: 1px solid var(--border);
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    [data-theme="dark"] .feature-item {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) .feature-item {
+        background: rgba(255, 255, 255, 0.06);
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme]) .feature-item {
+        background: rgba(0, 102, 255, 0.06);
+      }
+    }
+
+    .feature-item:nth-child(1) { animation-delay: 0.1s; }
+    .feature-item:nth-child(2) { animation-delay: 0.2s; }
+    .feature-item:nth-child(3) { animation-delay: 0.3s; }
+
+    .feature-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 102, 255, 0.05) 100%);
+    }
+
+    .feature-icon svg {
+      width: 44px;
+      height: 44px;
+      fill: var(--accent);
+    }
+
+    .feature-title {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .feature-description {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      .features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 4rem 6vw;
+      }
+
+      .feature-item {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .features {
+        padding: 3rem 5vw;
+        gap: 1rem;
+      }
+
+      .feature-item {
+        padding: 1.25rem 1rem;
+      }
+
+      .feature-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1.25rem;
+      }
+
+      .feature-icon svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      .feature-title {
+        font-size: 1.25rem;
+      }
+
+      .feature-description {
+        font-size: 0.875rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .feature-item {
+        animation: none;
+        opacity: 1;
+      }
+    }
+
     /* Footer */
     .footer {
       padding: 4rem 8vw;
@@ -622,6 +759,36 @@
       </div>
     </div>
   </main>
+
+  <section class="features">
+    <article class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+        </svg>
+      </div>
+      <h2 class="feature-title">심플</h2>
+      <p class="feature-description">설정 필요 없음. 탭하고 바로 플레이.</p>
+    </article>
+    <article class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+        </svg>
+      </div>
+      <h2 class="feature-title">내 방식대로</h2>
+      <p class="feature-description">타이머, 색상, 코트 체인지, 탭당 점수, 마이너스 점수 — 원하는 대로 설정.</p>
+    </article>
+    <article class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .9 2 2z"/>
+        </svg>
+      </div>
+      <h2 class="feature-title">저장 & 공유</h2>
+      <p class="feature-description">점수를 이미지로 저장하거나 친구에게 바로 공유.</p>
+    </article>
+  </section>
 
   <footer class="footer">
     <div class="footer-content">

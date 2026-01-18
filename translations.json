@@ -12,7 +12,13 @@
     "heroDescription": "Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.",
     "downloads": "downloads",
     "worldwide": "worldwide",
-    "contact": "Contact"
+    "contact": "Contact",
+    "feature1Title": "Simple",
+    "feature1Desc": "No setup, no learning. Just tap and play.",
+    "feature2Title": "Your Way",
+    "feature2Desc": "Timer, colors, changing ends, points per tap, negative numbers — customize as you need.",
+    "feature3Title": "Save & Share",
+    "feature3Desc": "Save scores as images or share directly with your friends."
   },
   "ja": {
     "langName": "日本語",
@@ -26,7 +32,13 @@
     "heroDescription": "スポーツも、ボードゲームも、どんな勝負も。タップだけでスコアを記録。8 チームまで対応、無料でダウンロード。",
     "downloads": "ダウンロード",
     "worldwide": "世界平均",
-    "contact": "お問い合わせ"
+    "contact": "お問い合わせ",
+    "feature1Title": "シンプル",
+    "feature1Desc": "設定不要、迷わない。タップするだけ。",
+    "feature2Title": "自分好みに",
+    "feature2Desc": "タイマー、色、コートチェンジ、タップごとの加点、マイナス点 ー 自由にカスタマイズ。",
+    "feature3Title": "保存 & 共有",
+    "feature3Desc": "スコアを画像で保存、友達にシェア。"
   },
   "zh": {
     "langName": "简体中文",
@@ -40,7 +52,13 @@
     "heroDescription": "运动比赛、桌游对战，一个 App 轻松搞定。点一点就能记分，最多 8 队。免费下载。",
     "downloads": "下载量",
     "worldwide": "全球评分",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "feature1Title": "简单易用",
+    "feature1Desc": "无需设置，即点即用。",
+    "feature2Title": "随心定制",
+    "feature2Desc": "计时器、颜色、换边、每次点击加分、负分 — 按需自定义。",
+    "feature3Title": "保存 & 分享",
+    "feature3Desc": "将比分保存为图片，直接分享给朋友。"
   },
   "zh-TW": {
     "langName": "繁體中文",
@@ -54,7 +72,13 @@
     "heroDescription": "運動比賽、桌遊對戰，一個 App 輕鬆搞定。點一點就能計分，最多 8 隊。免費下載。",
     "downloads": "下載量",
     "worldwide": "全球評分",
-    "contact": "聯絡我們"
+    "contact": "聯絡我們",
+    "feature1Title": "簡單易用",
+    "feature1Desc": "無需設定，即點即用。",
+    "feature2Title": "隨心定制",
+    "feature2Desc": "計時器、顏色、換邊、每次點擊加分、負分 — 按需自訂。",
+    "feature3Title": "儲存 & 分享",
+    "feature3Desc": "將比分儲存為圖片，直接分享給朋友。"
   },
   "th": {
     "langName": "ไทย",
@@ -68,7 +92,13 @@
     "heroDescription": "ไม่ว่าเกมอะไร บันทึกคะแนนง่ายๆ แค่แตะ รองรับถึง 8 ทีม ฟรี!",
     "downloads": "ดาวน์โหลด",
     "worldwide": "ทั่วโลก",
-    "contact": "ติดต่อ"
+    "contact": "ติดต่อ",
+    "feature1Title": "ใช้ง่าย",
+    "feature1Desc": "ไม่ต้องตั้งค่า แค่แตะก็เล่นได้",
+    "feature2Title": "ปรับแต่งได้",
+    "feature2Desc": "ตั้งเวลา สี สลับข้าง คะแนนต่อแตะ ติดลบ — ปรับได้ตามต้องการ",
+    "feature3Title": "บันทึก & แชร์",
+    "feature3Desc": "บันทึกคะแนนเป็นรูป แชร์ให้เพื่อนได้เลย"
   },
   "de": {
     "langName": "Deutsch",
@@ -82,7 +112,13 @@
     "heroDescription": "Punkte zählen für jedes Spiel mit bis zu 8 Teams. Einfache Bedienung, integrierter Timer und sofortige Punkteverfolgung. Kostenlos herunterladen.",
     "downloads": "Downloads",
     "worldwide": "weltweit",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "feature1Title": "Einfach",
+    "feature1Desc": "Keine Einrichtung, keine Lernkurve. Einfach tippen und spielen.",
+    "feature2Title": "Deine Regeln",
+    "feature2Desc": "Timer, Farben, Seitenwechsel, Punkte pro Tipp, Minuspunkte — alles anpassbar.",
+    "feature3Title": "Speichern & Teilen",
+    "feature3Desc": "Speichere Ergebnisse als Bilder oder teile sie direkt mit Freunden."
   },
   "fr": {
     "langName": "Français",
@@ -96,7 +132,13 @@
     "heroDescription": "Comptez les points pour n'importe quel jeu avec jusqu'à 8 équipes. Contrôles simples, minuterie intégrée et suivi instantané. Téléchargement gratuit.",
     "downloads": "téléchargements",
     "worldwide": "mondial",
-    "contact": "Contact"
+    "contact": "Contact",
+    "feature1Title": "Simple",
+    "feature1Desc": "Pas de configuration, pas d'apprentissage. Touchez et jouez.",
+    "feature2Title": "À votre façon",
+    "feature2Desc": "Minuterie, couleurs, changement de côté, points par touche, scores négatifs — personnalisez tout.",
+    "feature3Title": "Sauvegarder & Partager",
+    "feature3Desc": "Enregistrez les scores en images ou partagez directement avec vos amis."
   },
   "es": {
     "langName": "Español",
@@ -110,7 +152,13 @@
     "heroDescription": "Lleva la puntuación de cualquier juego con hasta 8 equipos. Controles simples, temporizador integrado y seguimiento instantáneo. Descarga gratis.",
     "downloads": "descargas",
     "worldwide": "mundial",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "feature1Title": "Simple",
+    "feature1Desc": "Sin configuración, sin aprendizaje. Solo toca y juega.",
+    "feature2Title": "A tu manera",
+    "feature2Desc": "Temporizador, colores, cambio de lado, puntos por toque, números negativos — personaliza todo.",
+    "feature3Title": "Guardar & Compartir",
+    "feature3Desc": "Guarda puntuaciones como imágenes o comparte directamente con tus amigos."
   },
   "ko": {
     "langName": "한국어",
@@ -124,7 +172,13 @@
     "heroDescription": "최대 8 팀까지 모든 경기의 점수를 기록하세요. 간단한 탭 조작, 내장 타이머, 즉시 점수 추적. 무료 다운로드.",
     "downloads": "다운로드",
     "worldwide": "전 세계",
-    "contact": "문의하기"
+    "contact": "문의하기",
+    "feature1Title": "심플",
+    "feature1Desc": "설정 필요 없음. 탭하고 바로 플레이.",
+    "feature2Title": "내 방식대로",
+    "feature2Desc": "타이머, 색상, 코트 체인지, 탭당 점수, 마이너스 점수 — 원하는 대로 설정.",
+    "feature3Title": "저장 & 공유",
+    "feature3Desc": "점수를 이미지로 저장하거나 친구에게 바로 공유."
   },
   "pt": {
     "langName": "Português",
@@ -138,7 +192,13 @@
     "heroDescription": "Marque pontos de qualquer jogo com até 8 times. Controles simples, cronômetro integrado e acompanhamento instantâneo. Download grátis.",
     "downloads": "downloads",
     "worldwide": "mundial",
-    "contact": "Contato"
+    "contact": "Contato",
+    "feature1Title": "Simples",
+    "feature1Desc": "Sem configuração, sem aprendizado. Toque e jogue.",
+    "feature2Title": "Do seu jeito",
+    "feature2Desc": "Timer, cores, troca de lado, pontos por toque, números negativos — personalize tudo.",
+    "feature3Title": "Salvar & Compartilhar",
+    "feature3Desc": "Salve pontuações como imagens ou compartilhe diretamente com seus amigos."
   },
   "it": {
     "langName": "Italiano",
@@ -152,7 +212,13 @@
     "heroDescription": "Tieni il punteggio di qualsiasi gioco con fino a 8 squadre. Controlli semplici, timer integrato e tracciamento istantaneo. Download gratuito.",
     "downloads": "download",
     "worldwide": "mondiale",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "feature1Title": "Semplice",
+    "feature1Desc": "Nessuna configurazione, nessun apprendimento. Tocca e gioca.",
+    "feature2Title": "A modo tuo",
+    "feature2Desc": "Timer, colori, cambio campo, punti per tocco, numeri negativi — personalizza tutto.",
+    "feature3Title": "Salva & Condividi",
+    "feature3Desc": "Salva i punteggi come immagini o condividili direttamente con i tuoi amici."
   },
   "ru": {
     "langName": "Русский",
@@ -166,7 +232,13 @@
     "heroDescription": "Ведите счёт любой игры с участием до 8 команд. Простое управление, встроенный таймер и мгновенное отслеживание. Бесплатная загрузка.",
     "downloads": "загрузок",
     "worldwide": "по всему миру",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "feature1Title": "Просто",
+    "feature1Desc": "Без настройки, без обучения. Просто нажми и играй.",
+    "feature2Title": "По-своему",
+    "feature2Desc": "Таймер, цвета, смена сторон, очки за касание, отрицательные числа — настрой всё.",
+    "feature3Title": "Сохранить & Поделиться",
+    "feature3Desc": "Сохраняй счёт как изображение или делись с друзьями."
   },
   "id": {
     "langName": "Indonesia",
@@ -180,7 +252,13 @@
     "heroDescription": "Catat skor permainan apa pun hingga 8 tim. Kontrol sentuh sederhana, timer bawaan, pelacakan skor instan. Gratis.",
     "downloads": "unduhan",
     "worldwide": "seluruh dunia",
-    "contact": "Kontak"
+    "contact": "Kontak",
+    "feature1Title": "Simpel",
+    "feature1Desc": "Tanpa pengaturan, tanpa belajar. Sentuh dan mainkan.",
+    "feature2Title": "Sesukamu",
+    "feature2Desc": "Timer, warna, tukar sisi, poin per sentuhan, angka negatif — sesuaikan semuanya.",
+    "feature3Title": "Simpan & Bagikan",
+    "feature3Desc": "Simpan skor sebagai gambar atau bagikan langsung ke teman."
   },
   "nl": {
     "langName": "Nederlands",
@@ -194,7 +272,13 @@
     "heroDescription": "Houd de score bij van elk spel met maximaal 8 teams. Eenvoudige bediening, ingebouwde timer en directe scoretracking. Gratis te downloaden.",
     "downloads": "downloads",
     "worldwide": "wereldwijd",
-    "contact": "Contact"
+    "contact": "Contact",
+    "feature1Title": "Simpel",
+    "feature1Desc": "Geen instellingen, geen leercurve. Tik en speel.",
+    "feature2Title": "Op jouw manier",
+    "feature2Desc": "Timer, kleuren, zijwissel, punten per tik, negatieve getallen — pas alles aan.",
+    "feature3Title": "Opslaan & Delen",
+    "feature3Desc": "Sla scores op als afbeeldingen of deel direct met vrienden."
   },
   "vi": {
     "langName": "Tiếng Việt",
@@ -208,7 +292,13 @@
     "heroDescription": "Ghi điểm mọi trò chơi với tối đa 8 đội. Điều khiển chạm đơn giản, đồng hồ tích hợp, theo dõi điểm tức thì. Miễn phí.",
     "downloads": "lượt tải",
     "worldwide": "toàn cầu",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "feature1Title": "Đơn giản",
+    "feature1Desc": "Không cần thiết lập, không cần học. Chạm và chơi.",
+    "feature2Title": "Theo cách của bạn",
+    "feature2Desc": "Bộ hẹn giờ, màu sắc, đổi bên, điểm mỗi chạm, số âm — tùy chỉnh mọi thứ.",
+    "feature3Title": "Lưu & Chia sẻ",
+    "feature3Desc": "Lưu điểm dưới dạng hình ảnh hoặc chia sẻ trực tiếp với bạn bè."
   },
   "tr": {
     "langName": "Türkçe",
@@ -222,7 +312,13 @@
     "heroDescription": "8 takıma kadar her oyunun skorunu tutun. Basit dokunma kontrolleri, yerleşik zamanlayıcı ve anlık skor takibi. Ücretsiz.",
     "downloads": "indirme",
     "worldwide": "dünya geneli",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "feature1Title": "Basit",
+    "feature1Desc": "Kurulum yok, öğrenme yok. Dokun ve oyna.",
+    "feature2Title": "Senin tarzın",
+    "feature2Desc": "Zamanlayıcı, renkler, taraf değiştirme, dokunuş başına puan, negatif sayılar — her şeyi özelleştir.",
+    "feature3Title": "Kaydet & Paylaş",
+    "feature3Desc": "Skorları resim olarak kaydet veya doğrudan arkadaşlarınla paylaş."
   },
   "pl": {
     "langName": "Polski",
@@ -236,7 +332,13 @@
     "heroDescription": "Licz punkty w każdej grze z maksymalnie 8 drużynami. Proste sterowanie, wbudowany timer i natychmiastowe śledzenie wyników. Do pobrania za darmo.",
     "downloads": "pobrań",
     "worldwide": "na świecie",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "feature1Title": "Proste",
+    "feature1Desc": "Bez konfiguracji, bez nauki. Po prostu dotknij i graj.",
+    "feature2Title": "Po swojemu",
+    "feature2Desc": "Timer, kolory, zmiana stron, punkty za dotknięcie, liczby ujemne — dostosuj wszystko.",
+    "feature3Title": "Zapisz & Udostępnij",
+    "feature3Desc": "Zapisz wyniki jako obrazy lub udostępnij bezpośrednio znajomym."
   },
   "sv": {
     "langName": "Svenska",
@@ -250,7 +352,13 @@
     "heroDescription": "Håll poängen i alla spel med upp till 8 lag. Enkla kontroller, inbyggd timer och omedelbar poängspårning. Gratis att ladda ner.",
     "downloads": "nedladdningar",
     "worldwide": "världen över",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "feature1Title": "Enkelt",
+    "feature1Desc": "Ingen inställning, ingen inlärning. Tryck och spela.",
+    "feature2Title": "På ditt sätt",
+    "feature2Desc": "Timer, färger, sidbyte, poäng per tryck, negativa tal — anpassa allt.",
+    "feature3Title": "Spara & Dela",
+    "feature3Desc": "Spara poäng som bilder eller dela direkt med vänner."
   },
   "hi": {
     "langName": "हिन्दी",
@@ -264,6 +372,12 @@
     "heroDescription": "8 टीमों तक किसी भी गेम का स्कोर रखें। सरल टैप नियंत्रण, बिल्ट-इन टाइमर और तुरंत स्कोर ट्रैकिंग। मुफ्त डाउनलोड।",
     "downloads": "डाउनलोड",
     "worldwide": "विश्वव्यापी",
-    "contact": "संपर्क"
+    "contact": "संपर्क",
+    "feature1Title": "सरल",
+    "feature1Desc": "कोई सेटअप नहीं, कोई सीखना नहीं। बस टैप करें और खेलें।",
+    "feature2Title": "अपने तरीके से",
+    "feature2Desc": "टाइमर, रंग, साइड बदलें, प्रति टैप अंक, नकारात्मक संख्याएं — सब कुछ कस्टमाइज़ करें।",
+    "feature3Title": "सहेजें & शेयर करें",
+    "feature3Desc": "स्कोर को इमेज के रूप में सहेजें या सीधे दोस्तों के साथ शेयर करें।"
   }
 }

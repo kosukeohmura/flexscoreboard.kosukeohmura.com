@@ -27,7 +27,13 @@
         "heroDescription",
         "downloads",
         "worldwide",
-        "contact"
+        "contact",
+        "feature1Title",
+        "feature1Desc",
+        "feature2Title",
+        "feature2Desc",
+        "feature3Title",
+        "feature3Desc"
       ],
       "properties": {
         "langName": {
@@ -80,6 +86,30 @@
         "contact": {
           "type": "string",
           "description": "Contact link text (e.g., 'Contact', 'お問い合わせ')"
+        },
+        "feature1Title": {
+          "type": "string",
+          "description": "Feature 1 title - simplicity (e.g., 'Simple')"
+        },
+        "feature1Desc": {
+          "type": "string",
+          "description": "Feature 1 description - simplicity"
+        },
+        "feature2Title": {
+          "type": "string",
+          "description": "Feature 2 title - customization (e.g., 'Your Way')"
+        },
+        "feature2Desc": {
+          "type": "string",
+          "description": "Feature 2 description - customization options"
+        },
+        "feature3Title": {
+          "type": "string",
+          "description": "Feature 3 title - sharing (e.g., 'Save & Share')"
+        },
+        "feature3Desc": {
+          "type": "string",
+          "description": "Feature 3 description - save and share functionality"
         }
       },
       "additionalProperties": false
