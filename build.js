@@ -103,6 +103,10 @@ function writeFile(filePath, content) {
     fs.chmodSync(filePath, 0o644);
   }
 
+  // Ensure trailing newline
+  if (!content.endsWith('\n')) {
+    content += '\n';
+  }
   fs.writeFileSync(filePath, content, 'utf8');
   fs.chmodSync(filePath, 0o444);
   console.log(`Generated: ${path.relative(DOCS_DIR, filePath)}`);
