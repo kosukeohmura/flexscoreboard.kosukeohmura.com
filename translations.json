@@ -7,7 +7,11 @@
     "rootPath": "",
     "title": "Scoreboard: Score Any Game - Track up to 8 teams instantly",
     "appName": "Scoreboard",
-    "heroTitle": ["Score", "Any", "Game"],
+    "heroTitle": [
+      "Score",
+      "Any",
+      "Game"
+    ],
     "metaDescription": "Free scoreboard app for iPhone & iPad. Perfect for ping pong, pool, board games & more. Up to 8 teams, built-in timer. Download free on App Store.",
     "heroDescription": "Keep score for any game with up to 8 teams. Simple tap controls, built-in timer, and instant score tracking. Free to download.",
     "downloads": "downloads",
@@ -27,7 +31,10 @@
     "rootPath": "../",
     "title": "Scoreboard: どんな試合もスコア管理 - 最大8人対応・ダーツ・卓球・ボドゲに",
     "appName": "Scoreboard",
-    "heroTitle": ["スコアを", "つけよう"],
+    "heroTitle": [
+      "スコアを",
+      "つけよう"
+    ],
     "metaDescription": "iPhone・iPad 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。8 チーム対応、タイマー内蔵。App Store で今すぐダウンロード。",
     "heroDescription": "スポーツも、ボードゲームも、どんな勝負も。タップだけでスコアを記録。8 チームまで対応、無料でダウンロード。",
     "downloads": "ダウンロード",
@@ -47,7 +54,10 @@
     "rootPath": "../",
     "title": "记分板: 轻松记录任何比赛 - 支持8队・乒乓台球桌游通用",
     "appName": "记分板",
-    "heroTitle": ["任何比赛", "轻松记分"],
+    "heroTitle": [
+      "任何比赛",
+      "轻松记分"
+    ],
     "metaDescription": "iPhone/iPad 免费记分板 App，乒乓球、桌游等比赛轻松记分。支持 8 队同时计分，内置计时器。立即在 App Store 免费下载。",
     "heroDescription": "运动比赛、桌游对战，一个 App 轻松搞定。点一点就能记分，最多 8 队。免费下载。",
     "downloads": "下载量",
@@ -67,7 +77,10 @@
     "rootPath": "../",
     "title": "記分板: 任何比賽輕鬆計分 - 支援8隊・撞球乒乓桌遊皆適用",
     "appName": "記分板",
-    "heroTitle": ["任何比賽", "輕鬆計分"],
+    "heroTitle": [
+      "任何比賽",
+      "輕鬆計分"
+    ],
     "metaDescription": "iPhone/iPad 免費計分板 App，桌球、桌遊等比賽輕鬆計分。支援 8 隊同時計分，內建計時器。立即在 App Store 免費下載。",
     "heroDescription": "運動比賽、桌遊對戰，一個 App 輕鬆搞定。點一點就能計分，最多 8 隊。免費下載。",
     "downloads": "下載量",
@@ -87,7 +100,10 @@
     "rootPath": "../",
     "title": "Scoreboard: นับคะแนนทุกเกม - 8 ทีม · สนุกเกอร์ แบด บอร์ดเกม",
     "appName": "Scoreboard",
-    "heroTitle": ["สกอร์บอร์ด", "ในมือคุณ"],
+    "heroTitle": [
+      "สกอร์บอร์ด",
+      "ในมือคุณ"
+    ],
     "metaDescription": "แอพนับคะแนนฟรีสำหรับ iPhone และ iPad เหมาะสำหรับปิงปอง บอร์ดเกม และอื่นๆ รองรับ 8 ทีม มีนาฬิกาจับเวลา ดาวน์โหลดฟรีที่ App Store",
     "heroDescription": "ไม่ว่าเกมอะไร บันทึกคะแนนง่ายๆ แค่แตะ รองรับถึง 8 ทีม ฟรี!",
     "downloads": "ดาวน์โหลด",
@@ -107,7 +123,11 @@
     "rootPath": "../",
     "title": "Punktezähler: Für jedes Spiel - Bis 8 Spieler · Billard & mehr",
     "appName": "Punktezähler",
-    "heroTitle": ["Zähle", "jeden", "Punkt"],
+    "heroTitle": [
+      "Zähle",
+      "jeden",
+      "Punkt"
+    ],
     "metaDescription": "Kostenlose Scoreboard App für iPhone & iPad. Perfekt für Tischtennis, Billard, Brettspiele und mehr. Bis zu 8 Teams, integrierter Timer. Jetzt im App Store herunterladen.",
     "heroDescription": "Punkte zählen für jedes Spiel mit bis zu 8 Teams. Einfache Bedienung, integrierter Timer und sofortige Punkteverfolgung. Kostenlos herunterladen.",
     "downloads": "Downloads",
@@ -127,7 +147,11 @@
     "rootPath": "../",
     "title": "Tableau de Score: Vos Jeux - Jusqu'à 8 joueurs",
     "appName": "Tableau de Score",
-    "heroTitle": ["Comptez", "tous les", "points"],
+    "heroTitle": [
+      "Comptez",
+      "tous les",
+      "points"
+    ],
     "metaDescription": "Application de score gratuite pour iPhone et iPad. Parfait pour le ping-pong, le billard, les jeux de société et plus. Jusqu'à 8 équipes, minuterie intégrée. Téléchargez sur l'App Store.",
     "heroDescription": "Comptez les points pour n'importe quel jeu avec jusqu'à 8 équipes. Contrôles simples, minuterie intégrée et suivi instantané. Téléchargement gratuit.",
     "downloads": "téléchargements",
@@ -147,7 +171,11 @@
     "rootPath": "../",
     "title": "Marcador: Cuenta Juegos - Hasta 8 equipos · Pádel y más",
     "appName": "Marcador",
-    "heroTitle": ["Cuenta", "cada", "punto"],
+    "heroTitle": [
+      "Cuenta",
+      "cada",
+      "punto"
+    ],
     "metaDescription": "Aplicación de marcador gratis para iPhone y iPad. Perfecto para ping pong, billar, juegos de mesa y más. Hasta 8 equipos, temporizador integrado. Descarga gratis en App Store.",
     "heroDescription": "Lleva la puntuación de cualquier juego con hasta 8 equipos. Controles simples, temporizador integrado y seguimiento instantáneo. Descarga gratis.",
     "downloads": "descargas",
@@ -167,7 +195,10 @@
     "rootPath": "../",
     "title": "점수판: 모든 경기 점수 기록 - 최대 8팀・당구 다트 보드게임",
     "appName": "점수판",
-    "heroTitle": ["모든 경기", "점수 기록"],
+    "heroTitle": [
+      "모든 경기",
+      "점수 기록"
+    ],
     "metaDescription": "iPhone 및 iPad 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 8 팀 지원, 타이머 내장. App Store 에서 무료 다운로드.",
     "heroDescription": "최대 8 팀까지 모든 경기의 점수를 기록하세요. 간단한 탭 조작, 내장 타이머, 즉시 점수 추적. 무료 다운로드.",
     "downloads": "다운로드",
@@ -187,7 +218,11 @@
     "rootPath": "../",
     "title": "Placar: Marque Qualquer Jogo - Até 8 times · Sinuca, truco...",
     "appName": "Placar",
-    "heroTitle": ["Marque", "todos os", "pontos"],
+    "heroTitle": [
+      "Marque",
+      "todos os",
+      "pontos"
+    ],
     "metaDescription": "Aplicativo de placar grátis para iPhone e iPad. Perfeito para ping pong, sinuca, jogos de tabuleiro e mais. Até 8 times, cronômetro integrado. Baixe grátis na App Store.",
     "heroDescription": "Marque pontos de qualquer jogo com até 8 times. Controles simples, cronômetro integrado e acompanhamento instantâneo. Download grátis.",
     "downloads": "downloads",
@@ -207,7 +242,11 @@
     "rootPath": "../",
     "title": "Placar: Marque Qualquer Jogo - Até 8 equipas · Bilhar e Sueca",
     "appName": "Placar",
-    "heroTitle": ["Registe", "todos os", "pontos"],
+    "heroTitle": [
+      "Registe",
+      "todos os",
+      "pontos"
+    ],
     "metaDescription": "Aplicação de marcador grátis para iPhone e iPad. Perfeita para ténis de mesa, bilhar, jogos de tabuleiro e mais. Até 8 equipas, cronómetro integrado. Descarregue gratuitamente na App Store.",
     "heroDescription": "Registe pontos de qualquer jogo com até 8 equipas. Controlos simples, cronómetro integrado e rastreamento instantâneo. Download gratuito.",
     "downloads": "transferências",
@@ -227,7 +266,11 @@
     "rootPath": "../",
     "title": "Segnapunti: Per Ogni Partita - 8 squadre · Bocce e altro",
     "appName": "Segnapunti",
-    "heroTitle": ["Segna", "ogni", "punto"],
+    "heroTitle": [
+      "Segna",
+      "ogni",
+      "punto"
+    ],
     "metaDescription": "App segnapunti gratuita per iPhone e iPad. Perfetta per ping pong, biliardo, giochi da tavolo e altro. Fino a 8 squadre, timer integrato. Scarica gratis dall'App Store.",
     "heroDescription": "Tieni il punteggio di qualsiasi gioco con fino a 8 squadre. Controlli semplici, timer integrato e tracciamento istantaneo. Download gratuito.",
     "downloads": "download",
@@ -247,7 +290,11 @@
     "rootPath": "../",
     "title": "Табло: Счёт Любой Игры - До 8 команд · Разные игры",
     "appName": "Табло",
-    "heroTitle": ["Считай", "любые", "очки"],
+    "heroTitle": [
+      "Считай",
+      "любые",
+      "очки"
+    ],
     "metaDescription": "Бесплатное приложение для счёта очков на iPhone и iPad. Идеально для настольного тенниса, бильярда, настольных игр. До 8 команд, встроенный таймер. Скачайте бесплатно в App Store.",
     "heroDescription": "Ведите счёт любой игры с участием до 8 команд. Простое управление, встроенный таймер и мгновенное отслеживание. Бесплатная загрузка.",
     "downloads": "загрузок",
@@ -267,7 +314,11 @@
     "rootPath": "../",
     "title": "Papan Skor: Catat Semua Game - Hingga 8 tim · Badminton dkk",
     "appName": "Papan Skor",
-    "heroTitle": ["Catat", "Setiap", "Skor"],
+    "heroTitle": [
+      "Catat",
+      "Setiap",
+      "Skor"
+    ],
     "metaDescription": "Aplikasi papan skor gratis untuk iPhone & iPad. Cocok untuk tenis meja, biliar, board game, dan lainnya. Hingga 8 tim, timer bawaan. Download gratis di App Store.",
     "heroDescription": "Catat skor permainan apa pun hingga 8 tim. Kontrol sentuh sederhana, timer bawaan, pelacakan skor instan. Gratis.",
     "downloads": "unduhan",
@@ -287,7 +338,11 @@
     "rootPath": "../",
     "title": "Scorebord: Voor Elk Spel - Tot 8 spelers · Darts, biljart",
     "appName": "Scorebord",
-    "heroTitle": ["Tel", "Elke", "Score"],
+    "heroTitle": [
+      "Tel",
+      "Elke",
+      "Score"
+    ],
     "metaDescription": "Gratis scoreboard app voor iPhone & iPad. Perfect voor tafeltennis, biljart, bordspellen en meer. Tot 8 teams, ingebouwde timer. Download gratis in de App Store.",
     "heroDescription": "Houd de score bij van elk spel met maximaal 8 teams. Eenvoudige bediening, ingebouwde timer en directe scoretracking. Gratis te downloaden.",
     "downloads": "downloads",
@@ -307,7 +362,11 @@
     "rootPath": "../",
     "title": "Bảng Điểm: Ghi Mọi Trận Đấu - Tối đa 8 đội · Cầu lông, bida",
     "appName": "Bảng Điểm",
-    "heroTitle": ["Ghi", "Mọi", "Điểm"],
+    "heroTitle": [
+      "Ghi",
+      "Mọi",
+      "Điểm"
+    ],
     "metaDescription": "Ứng dụng bảng điểm miễn phí cho iPhone & iPad. Hoàn hảo cho bóng bàn, bi-a, board game và nhiều hơn nữa. Tối đa 8 đội, đồng hồ tích hợp. Tải miễn phí trên App Store.",
     "heroDescription": "Ghi điểm mọi trò chơi với tối đa 8 đội. Điều khiển chạm đơn giản, đồng hồ tích hợp, theo dõi điểm tức thì. Miễn phí.",
     "downloads": "lượt tải",
@@ -327,7 +386,11 @@
     "rootPath": "../",
     "title": "Skor Tahtası: Her Oyun İçin - 8 takım · Çeşitli oyunlar",
     "appName": "Skor Tahtası",
-    "heroTitle": ["Her", "Skoru", "Say"],
+    "heroTitle": [
+      "Her",
+      "Skoru",
+      "Say"
+    ],
     "metaDescription": "iPhone ve iPad için ücretsiz skor tahtası uygulaması. Masa tenisi, bilardo, kutu oyunları ve daha fazlası için mükemmel. 8 takıma kadar, yerleşik zamanlayıcı. App Store'dan ücretsiz indirin.",
     "heroDescription": "8 takıma kadar her oyunun skorunu tutun. Basit dokunma kontrolleri, yerleşik zamanlayıcı ve anlık skor takibi. Ücretsiz.",
     "downloads": "indirme",
@@ -347,7 +410,11 @@
     "rootPath": "../",
     "title": "Tablica Wyników: Każda Gra - Do 8 graczy · Bilard i więcej",
     "appName": "Tablica Wyników",
-    "heroTitle": ["Licz", "Każdy", "Punkt"],
+    "heroTitle": [
+      "Licz",
+      "Każdy",
+      "Punkt"
+    ],
     "metaDescription": "Darmowa aplikacja do liczenia punktów na iPhone i iPad. Idealna do tenisa stołowego, bilarda, gier planszowych i więcej. Do 8 drużyn, wbudowany timer. Pobierz za darmo z App Store.",
     "heroDescription": "Licz punkty w każdej grze z maksymalnie 8 drużynami. Proste sterowanie, wbudowany timer i natychmiastowe śledzenie wyników. Do pobrania za darmo.",
     "downloads": "pobrań",
@@ -367,7 +434,11 @@
     "rootPath": "../",
     "title": "Resultattavla: För Alla Spel - Upp till 8 spelare · Spel",
     "appName": "Resultattavla",
-    "heroTitle": ["Räkna", "Varje", "Poäng"],
+    "heroTitle": [
+      "Räkna",
+      "Varje",
+      "Poäng"
+    ],
     "metaDescription": "Gratis scoreboard-app för iPhone och iPad. Perfekt för bordtennis, biljard, brädspel och mer. Upp till 8 lag, inbyggd timer. Ladda ner gratis från App Store.",
     "heroDescription": "Håll poängen i alla spel med upp till 8 lag. Enkla kontroller, inbyggd timer och omedelbar poängspårning. Gratis att ladda ner.",
     "downloads": "nedladdningar",
@@ -387,7 +458,10 @@
     "rootPath": "../",
     "title": "स्कोरबोर्ड: हर गेम का स्कोर - 8 टीम तक · कैरम, बैडमिंटन",
     "appName": "स्कोरबोर्ड",
-    "heroTitle": ["हर स्कोर", "गिनें"],
+    "heroTitle": [
+      "हर स्कोर",
+      "गिनें"
+    ],
     "metaDescription": "iPhone और iPad के लिए मुफ्त स्कोरबोर्ड ऐप। टेबल टेनिस, बिलियर्ड्स, बोर्ड गेम्स और बहुत कुछ के लिए बिल्कुल सही। 8 टीमों तक, बिल्ट-इन टाइमर। App Store से मुफ्त डाउनलोड करें।",
     "heroDescription": "8 टीमों तक किसी भी गेम का स्कोर रखें। सरल टैप नियंत्रण, बिल्ट-इन टाइमर और तुरंत स्कोर ट्रैकिंग। मुफ्त डाउनलोड।",
     "downloads": "डाउनलोड",
@@ -399,5 +473,221 @@
     "feature2Desc": "टाइमर, रंग, साइड बदलें, प्रति टैप अंक, नकारात्मक संख्याएं — सब कुछ कस्टमाइज़ करें।",
     "feature3Title": "सहेजें & शेयर करें",
     "feature3Desc": "स्कोर को इमेज के रूप में सहेजें या सीधे दोस्तों के साथ शेयर करें।"
+  },
+  "uk": {
+    "langName": "Українська",
+    "ogLocale": "uk_UA",
+    "path": "/uk/",
+    "rootPath": "../",
+    "title": "Табло Додаток - Рахунок будь-якої гри",
+    "appName": "Табло",
+    "heroTitle": [
+      "Рахунок",
+      "будь-якої",
+      "гри"
+    ],
+    "metaDescription": "Безкоштовний додаток-табло для iPhone та iPad. Ідеально підходить для настільного тенісу, більярду, настільних ігор тощо. До 8 команд, вбудований таймер.",
+    "heroDescription": "Ведіть рахунок будь-якої гри з можливістю до 8 команд. Прості елементи керування, вбудований таймер та миттєве відстеження рахунку. Безкоштовно.",
+    "downloads": "завантажень",
+    "worldwide": "по всьому світу",
+    "contact": "Контакт",
+    "feature1Title": "Просто",
+    "feature1Desc": "Без налаштувань, без навчання. Просто торкніться і грайте.",
+    "feature2Title": "На ваш смак",
+    "feature2Desc": "Таймер, кольори, зміна сторін, очки за дотик, від'ємні числа — налаштуйте як потрібно.",
+    "feature3Title": "Збережіть і поділіться",
+    "feature3Desc": "Зберігайте рахунок як зображення або діліться безпосередньо з друзями."
+  },
+  "da": {
+    "langName": "Dansk",
+    "ogLocale": "da_DK",
+    "path": "/da/",
+    "rootPath": "../",
+    "title": "Scoreboard App - Point i alle spil",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Point i",
+      "alle",
+      "spil"
+    ],
+    "metaDescription": "Gratis scoreboard-app til iPhone og iPad. Perfekt til bordtennis, pool, brætspil og mere. Op til 8 hold, indbygget timer. Download gratis på App Store.",
+    "heroDescription": "Tæl point i ethvert spil med op til 8 hold. Simple tap-kontroller, indbygget timer og øjeblikkelig pointtælling. Gratis at downloade.",
+    "downloads": "downloads",
+    "worldwide": "verden over",
+    "contact": "Kontakt",
+    "feature1Title": "Simpelt",
+    "feature1Desc": "Ingen opsætning, ingen læring. Bare tap og spil.",
+    "feature2Title": "Din måde",
+    "feature2Desc": "Timer, farver, baneskift, point per tap, negative tal — tilpas som du vil.",
+    "feature3Title": "Gem og del",
+    "feature3Desc": "Gem scores som billeder eller del direkte med dine venner."
+  },
+  "no": {
+    "langName": "Norsk",
+    "ogLocale": "no_NO",
+    "path": "/no/",
+    "rootPath": "../",
+    "title": "Scoreboard App - Poeng i alle spill",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Poeng i",
+      "alle",
+      "spill"
+    ],
+    "metaDescription": "Gratis scoreboard-app for iPhone og iPad. Perfekt for bordtennis, pool, brettspill og mer. Opptil 8 lag, innebygd timer. Last ned gratis på App Store.",
+    "heroDescription": "Hold oversikt over poeng i alle spill med opptil 8 lag. Enkle tap-kontroller, innebygd timer og øyeblikkelig poengtelling. Gratis å laste ned.",
+    "downloads": "nedlastinger",
+    "worldwide": "verden over",
+    "contact": "Kontakt",
+    "feature1Title": "Enkelt",
+    "feature1Desc": "Ingen oppsett, ingen læring. Bare trykk og spill.",
+    "feature2Title": "Din måte",
+    "feature2Desc": "Timer, farger, bytte sider, poeng per trykk, negative tall — tilpass som du vil.",
+    "feature3Title": "Lagre og del",
+    "feature3Desc": "Lagre resultater som bilder eller del direkte med vennene dine."
+  },
+  "fi": {
+    "langName": "Suomi",
+    "ogLocale": "fi_FI",
+    "path": "/fi/",
+    "rootPath": "../",
+    "title": "Tulostaulu Sovellus - Pisteet kaikkiin peleihin",
+    "appName": "Tulostaulu",
+    "heroTitle": [
+      "Pisteet",
+      "kaikkiin",
+      "peleihin"
+    ],
+    "metaDescription": "Ilmainen tulostaulu iPhonelle ja iPadille. Täydellinen pöytätenniseen, biljardiin, lautapeleihin ja muuhun. Jopa 8 joukkuetta, sisäänrakennettu ajastin. Lataa ilmaiseksi App Storesta.",
+    "heroDescription": "Laske pisteet missä tahansa pelissä jopa 8 joukkueella. Yksinkertaiset näpäytysohjaimet, sisäänrakennettu ajastin ja välitön pistelaskenta. Ilmainen lataus.",
+    "downloads": "latausta",
+    "worldwide": "maailmanlaajuisesti",
+    "contact": "Ota yhteyttä",
+    "feature1Title": "Yksinkertaista",
+    "feature1Desc": "Ei asennusta, ei opettelua. Vain napauta ja pelaa.",
+    "feature2Title": "Omalla tavallasi",
+    "feature2Desc": "Ajastin, värit, kenttien vaihto, pisteet per näpäytys, negatiiviset luvut — muokkaa tarpeittesi mukaan.",
+    "feature3Title": "Tallenna ja jaa",
+    "feature3Desc": "Tallenna tulokset kuvina tai jaa suoraan kavereidesi kanssa."
+  },
+  "cs": {
+    "langName": "Čeština",
+    "ogLocale": "cs_CZ",
+    "path": "/cs/",
+    "rootPath": "../",
+    "title": "Scoreboard Aplikace - Skóre v každé hře",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Skóre",
+      "v každé",
+      "hře"
+    ],
+    "metaDescription": "Bezplatná aplikace scoreboard pro iPhone a iPad. Perfektní na stolní tenis, kulečník, deskové hry a další. Až 8 týmů, vestavěný časovač. Stáhněte zdarma na App Store.",
+    "heroDescription": "Počítejte skóre v jakékoliv hře až s 8 týmy. Jednoduché ovládání dotykem, vestavěný časovač a okamžité sledování skóre. Zdarma ke stažení.",
+    "downloads": "stažení",
+    "worldwide": "po celém světě",
+    "contact": "Kontakt",
+    "feature1Title": "Jednoduché",
+    "feature1Desc": "Žádné nastavení, žádné učení. Jen klepněte a hrajte.",
+    "feature2Title": "Váš způsob",
+    "feature2Desc": "Časovač, barvy, změna stran, body za klepnutí, záporná čísla — přizpůsobte si podle potřeby.",
+    "feature3Title": "Uložit a sdílet",
+    "feature3Desc": "Uložte skóre jako obrázky nebo sdílejte přímo s přáteli."
+  },
+  "el": {
+    "langName": "Ελληνικά",
+    "ogLocale": "el_GR",
+    "path": "/el/",
+    "rootPath": "../",
+    "title": "Scoreboard Εφαρμογή - Σκορ σε κάθε παιχνίδι",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Σκορ",
+      "σε κάθε",
+      "παιχνίδι"
+    ],
+    "metaDescription": "Δωρεάν εφαρμογή scoreboard για iPhone και iPad. Ιδανικό για πινγκ πονγκ, μπιλιάρδο, επιτραπέζια παιχνίδια και άλλα. Έως 8 ομάδες, ενσωματωμένο χρονόμετρο. Κατεβάστε δωρεάν από το App Store.",
+    "heroDescription": "Μετρήστε το σκορ σε κάθε παιχνίδι με έως 8 ομάδες. Απλά χειριστήρια αφής, ενσωματωμένο χρονόμετρο και άμεση καταμέτρηση σκορ. Δωρεάν λήψη.",
+    "downloads": "λήψεις",
+    "worldwide": "παγκοσμίως",
+    "contact": "Επικοινωνία",
+    "feature1Title": "Απλό",
+    "feature1Desc": "Χωρίς ρυθμίσεις, χωρίς εκμάθηση. Απλά πατήστε και παίξτε.",
+    "feature2Title": "Με τον τρόπο σας",
+    "feature2Desc": "Χρονόμετρο, χρώματα, αλλαγή πλευρών, πόντοι ανά άγγιγμα, αρνητικοί αριθμοί — προσαρμόστε όπως χρειάζεστε.",
+    "feature3Title": "Αποθήκευση και κοινοποίηση",
+    "feature3Desc": "Αποθηκεύστε τα σκορ ως εικόνες ή μοιραστείτε απευθείας με τους φίλους σας."
+  },
+  "ro": {
+    "langName": "Română",
+    "ogLocale": "ro_RO",
+    "path": "/ro/",
+    "rootPath": "../",
+    "title": "Scoreboard Aplicație - Scor pentru orice joc",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Scor pentru",
+      "orice",
+      "joc"
+    ],
+    "metaDescription": "Aplicație scoreboard gratuită pentru iPhone și iPad. Perfectă pentru tenis de masă, biliard, jocuri de masă și altele. Până la 8 echipe, cronometru integrat. Descarcă gratuit din App Store.",
+    "heroDescription": "Numără scorul în orice joc cu până la 8 echipe. Comenzi simple prin atingere, cronometru integrat și urmărire instantanee a scorului. Gratuit de descărcat.",
+    "downloads": "descărcări",
+    "worldwide": "în întreaga lume",
+    "contact": "Contact",
+    "feature1Title": "Simplu",
+    "feature1Desc": "Fără configurare, fără învățare. Doar atinge și joacă.",
+    "feature2Title": "În felul tău",
+    "feature2Desc": "Cronometru, culori, schimbare teren, puncte per atingere, numere negative — personalizează după nevoie.",
+    "feature3Title": "Salvează și partajează",
+    "feature3Desc": "Salvează scorurile ca imagini sau partajează direct cu prietenii tăi."
+  },
+  "hu": {
+    "langName": "Magyar",
+    "ogLocale": "hu_HU",
+    "path": "/hu/",
+    "rootPath": "../",
+    "title": "Scoreboard Alkalmazás - Pontok minden játékban",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Pontok",
+      "minden",
+      "játékban"
+    ],
+    "metaDescription": "Ingyenes scoreboard alkalmazás iPhone-ra és iPadre. Tökéletes asztaliteniszhez, biliárdhoz, társasjátékokhoz és többhöz. Akár 8 csapat, beépített időzítő. Töltsd le ingyen az App Store-ból.",
+    "heroDescription": "Számold a pontokat bármilyen játékban akár 8 csapattal. Egyszerű érintésvezérlés, beépített időzítő és azonnali pontszámlálás. Ingyenesen letölthető.",
+    "downloads": "letöltés",
+    "worldwide": "világszerte",
+    "contact": "Kapcsolat",
+    "feature1Title": "Egyszerű",
+    "feature1Desc": "Nincs beállítás, nincs tanulás. Csak érintsd meg és játssz.",
+    "feature2Title": "A te módodon",
+    "feature2Desc": "Időzítő, színek, oldalváltás, pontok érintésenként, negatív számok — szabd testre ahogy szeretnéd.",
+    "feature3Title": "Mentés és megosztás",
+    "feature3Desc": "Mentsd el a pontszámokat képként vagy oszd meg közvetlenül a barátaiddal."
+  },
+  "ms": {
+    "langName": "Bahasa Melayu",
+    "ogLocale": "ms_MY",
+    "path": "/ms/",
+    "rootPath": "../",
+    "title": "Scoreboard Aplikasi - Skor untuk semua permainan",
+    "appName": "Scoreboard",
+    "heroTitle": [
+      "Skor untuk",
+      "semua",
+      "permainan"
+    ],
+    "metaDescription": "Aplikasi papan skor percuma untuk iPhone & iPad. Sesuai untuk ping pong, pool, permainan papan & lebih. Sehingga 8 pasukan, pemasa terbina dalam. Muat turun percuma di App Store.",
+    "heroDescription": "Kira skor untuk mana-mana permainan dengan sehingga 8 pasukan. Kawalan sentuh mudah, pemasa terbina dalam, dan penjejakan skor segera. Percuma untuk dimuat turun.",
+    "downloads": "muat turun",
+    "worldwide": "seluruh dunia",
+    "contact": "Hubungi",
+    "feature1Title": "Mudah",
+    "feature1Desc": "Tiada persediaan, tiada pembelajaran. Hanya sentuh dan main.",
+    "feature2Title": "Cara anda",
+    "feature2Desc": "Pemasa, warna, tukar hala, mata setiap sentuhan, nombor negatif — sesuaikan mengikut keperluan anda.",
+    "feature3Title": "Simpan & Kongsi",
+    "feature3Desc": "Simpan skor sebagai imej atau kongsi terus dengan rakan-rakan anda."
   }
 }
