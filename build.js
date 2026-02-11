@@ -20,9 +20,20 @@ function buildHeroTitleHtml(heroTitle) {
 }
 
 function buildHreflangTags() {
-  const tags = languages.map(l =>
-    `<link rel="alternate" hreflang="${l}" href="${BASE_URL}${translations[l].path}">`
-  );
+  const tags = [];
+
+  for (const lang of languages) {
+    const t = translations[lang];
+    const url = `${BASE_URL}${t.path}`;
+
+    // Use custom hreflangTags if specified, otherwise use the language key
+    const hreflangValues = t.hreflangTags || [lang];
+
+    for (const hreflang of hreflangValues) {
+      tags.push(`<link rel="alternate" hreflang="${hreflang}" href="${url}">`);
+    }
+  }
+
   tags.push(`<link rel="alternate" hreflang="x-default" href="${BASE_URL}/">`);
   return tags.join('\n  ');
 }

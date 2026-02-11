@@ -40,6 +40,12 @@
           "type": "string",
           "description": "Display name of the language (e.g., 'English', '日本語')"
         },
+        "hreflangTags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Optional: Custom hreflang values for this language. If not specified, uses the language key. Useful for languages with multiple region/script variants (e.g., ['zh-CN', 'zh-Hans'] for simplified Chinese)."
+        },
         "ogLocale": {
           "type": "string",
           "pattern": "^[a-z]{2}_[A-Z]{2}$",

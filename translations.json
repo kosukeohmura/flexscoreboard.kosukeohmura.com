@@ -49,6 +49,7 @@
   },
   "zh": {
     "langName": "简体中文",
+    "hreflangTags": ["zh-CN", "zh-Hans"],
     "ogLocale": "zh_CN",
     "path": "/zh/",
     "rootPath": "../",
@@ -72,6 +73,7 @@
   },
   "zh-TW": {
     "langName": "繁體中文",
+    "hreflangTags": ["zh-TW", "zh-Hant"],
     "ogLocale": "zh_TW",
     "path": "/zh-TW/",
     "rootPath": "../",
