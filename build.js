@@ -46,8 +46,10 @@ function buildLangOptions(currentLang) {
 }
 
 function buildAppStoreUrl(lang) {
+  const t = translations[lang];
+  const regionCode = t.ogLocale.split('_')[1].toLowerCase();
   const langParam = lang.toLowerCase().replace(/[^a-z]/g, '');
-  return `https://apps.apple.com/app/apple-store/id1453457844?pt=119669481&ct=lp_${langParam}&mt=8`;
+  return `https://apps.apple.com/${regionCode}/app/apple-store/id1453457844?pt=119669481&ct=lp_${langParam}&mt=8`;
 }
 
 function buildSitemap() {
