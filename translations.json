@@ -5,7 +5,7 @@
     "ogLocale": "en_US",
     "path": "/",
     "rootPath": "",
-    "title": "Scoreboard: Score Any Game - Track up to 8 teams instantly",
+    "title": "Scoreboard: Score Any Game - Pickleball, Cornhole & Darts",
     "appName": "Scoreboard",
     "heroTitle": [
       "Score",
@@ -29,7 +29,7 @@
     "ogLocale": "ja_JP",
     "path": "/ja/",
     "rootPath": "../",
-    "title": "Scoreboard: どんな試合もスコア管理 - 最大8人対応・ダーツ・卓球・ボドゲに",
+    "title": "Scoreboard: どんな試合もスコア管理・得点記録 - ダーツ・卓球・バドミントン・ビリヤード・ボドゲ・モルック対応",
     "appName": "Scoreboard",
     "heroTitle": [
       "スコアを",
@@ -49,11 +49,14 @@
   },
   "zh": {
     "langName": "简体中文",
-    "hreflangTags": ["zh-CN", "zh-Hans"],
+    "hreflangTags": [
+      "zh-CN",
+      "zh-Hans"
+    ],
     "ogLocale": "zh_CN",
     "path": "/zh/",
     "rootPath": "../",
-    "title": "记分板: 轻松记录任何比赛 - 支持8队・乒乓台球桌游通用",
+    "title": "记分板: 轻松记录任何运动和游戏得分 - 乒乓球・台球・羽毛球・飞镖・桌游・棋牌・排球・门球等都适用",
     "appName": "记分板",
     "heroTitle": [
       "任何比赛",
@@ -73,11 +76,14 @@
   },
   "zh-TW": {
     "langName": "繁體中文",
-    "hreflangTags": ["zh-TW", "zh-Hant"],
+    "hreflangTags": [
+      "zh-TW",
+      "zh-Hant"
+    ],
     "ogLocale": "zh_TW",
     "path": "/zh-TW/",
     "rootPath": "../",
-    "title": "記分板: 任何比賽輕鬆計分 - 支援8隊・撞球乒乓桌遊皆適用",
+    "title": "記分板: 任何運動和遊戲都能輕鬆計分 - 撞球・乒乓・桌遊・飛鏢・羽毛球・排球・棋牌・手足球等適用",
     "appName": "記分板",
     "heroTitle": [
       "任何比賽",
@@ -100,7 +106,7 @@
     "ogLocale": "th_TH",
     "path": "/th/",
     "rootPath": "../",
-    "title": "Scoreboard: นับคะแนนทุกเกม - 8 ทีม · สนุกเกอร์ แบด บอร์ดเกม",
+    "title": "Scoreboard: นับคะแนนได้ทุกเกม - แบดมินตัน・ตะกร้อ・เปตอง・ปิงปอง",
     "appName": "Scoreboard",
     "heroTitle": [
       "สกอร์บอร์ด",
@@ -123,7 +129,7 @@
     "ogLocale": "de_DE",
     "path": "/de/",
     "rootPath": "../",
-    "title": "Punktezähler: Für jedes Spiel - Bis 8 Spieler · Billard & mehr",
+    "title": "Punktezähler: Für jedes Spiel - Kicker, Darts, Billard & Kubb",
     "appName": "Punktezähler",
     "heroTitle": [
       "Zähle",
@@ -147,7 +153,7 @@
     "ogLocale": "fr_FR",
     "path": "/fr/",
     "rootPath": "../",
-    "title": "Tableau de Score: Vos Jeux - Jusqu'à 8 joueurs",
+    "title": "Tableau de Score: Vos Jeux - Mölkky, Pétanque, Belote, Kubb",
     "appName": "Tableau de Score",
     "heroTitle": [
       "Comptez",
@@ -171,7 +177,7 @@
     "ogLocale": "es_ES",
     "path": "/es/",
     "rootPath": "../",
-    "title": "Marcador: Cuenta Juegos - Hasta 8 equipos · Pádel y más",
+    "title": "Marcador: Para Cualquier Juego - Mus, Futbolín, Dardos & Billar",
     "appName": "Marcador",
     "heroTitle": [
       "Cuenta",
@@ -195,7 +201,7 @@
     "ogLocale": "ko_KR",
     "path": "/ko/",
     "rootPath": "../",
-    "title": "점수판: 모든 경기 점수 기록 - 최대 8팀・당구 다트 보드게임",
+    "title": "점수판: 모든 스포츠와 게임 점수를 기록 - 당구・다트・탁구・배드민턴・보드게임・족구・카드게임에 최적",
     "appName": "점수판",
     "heroTitle": [
       "모든 경기",
@@ -218,7 +224,7 @@
     "ogLocale": "pt_BR",
     "path": "/pt-br/",
     "rootPath": "../",
-    "title": "Placar: Marque Qualquer Jogo - Até 8 times · Sinuca, truco...",
+    "title": "Placar: Marque Qualquer Jogo - Truco, Sinuca, Pebolim, Dardos",
     "appName": "Placar",
     "heroTitle": [
       "Marque",
@@ -242,7 +248,7 @@
     "ogLocale": "pt_PT",
     "path": "/pt-pt/",
     "rootPath": "../",
-    "title": "Placar: Marque Qualquer Jogo - Até 8 equipas · Bilhar e Sueca",
+    "title": "Placar: Marque Qualquer Jogo - Sueca, Bilhar, Dardos & Dominó",
     "appName": "Placar",
     "heroTitle": [
       "Registe",
@@ -266,7 +272,7 @@
     "ogLocale": "it_IT",
     "path": "/it/",
     "rootPath": "../",
-    "title": "Segnapunti: Per Ogni Partita - 8 squadre · Bocce e altro",
+    "title": "Segnapunti: Per Ogni Partita - Bocce, Briscola & Freccette",
     "appName": "Segnapunti",
     "heroTitle": [
       "Segna",
@@ -290,7 +296,7 @@
     "ogLocale": "ru_RU",
     "path": "/ru/",
     "rootPath": "../",
-    "title": "Табло: Счёт Любой Игры - До 8 команд · Разные игры",
+    "title": "Табло: Очки и Счёт Любой Игры - Бильярд, Кикер, Городки, Дартс",
     "appName": "Табло",
     "heroTitle": [
       "Считай",
@@ -314,7 +320,7 @@
     "ogLocale": "id_ID",
     "path": "/id/",
     "rootPath": "../",
-    "title": "Papan Skor: Catat Semua Game - Hingga 8 tim · Badminton dkk",
+    "title": "Papan Skor: Catat Semua Game - Badminton, Dart, Voli & Biliar",
     "appName": "Papan Skor",
     "heroTitle": [
       "Catat",
@@ -338,7 +344,7 @@
     "ogLocale": "nl_NL",
     "path": "/nl/",
     "rootPath": "../",
-    "title": "Scorebord: Voor Elk Spel - Tot 8 spelers · Darts, biljart",
+    "title": "Scorebord: Voor Elk Spel - Darts, Sjoelen, Kubb & Biljart",
     "appName": "Scorebord",
     "heroTitle": [
       "Tel",
@@ -362,7 +368,7 @@
     "ogLocale": "vi_VN",
     "path": "/vi/",
     "rootPath": "../",
-    "title": "Bảng Điểm: Ghi Mọi Trận Đấu - Tối đa 8 đội · Cầu lông, bida",
+    "title": "Bảng Điểm: Ghi Mọi Trận Đấu - Cầu Lông, Bida, Bi Sắt, Đá Cầu",
     "appName": "Bảng Điểm",
     "heroTitle": [
       "Ghi",
@@ -386,7 +392,7 @@
     "ogLocale": "tr_TR",
     "path": "/tr/",
     "rootPath": "../",
-    "title": "Skor Tahtası: Her Oyun İçin - 8 takım · Çeşitli oyunlar",
+    "title": "Skor Tahtası: Her Oyun İçin - Tavla, Okey, Bilardo & Langırt",
     "appName": "Skor Tahtası",
     "heroTitle": [
       "Her",
@@ -410,7 +416,7 @@
     "ogLocale": "pl_PL",
     "path": "/pl/",
     "rootPath": "../",
-    "title": "Tablica Wyników: Każda Gra - Do 8 graczy · Bilard i więcej",
+    "title": "Tablica Wyników: Każda Gra - Bilard, Dart, Ping Pong, Bocce",
     "appName": "Tablica Wyników",
     "heroTitle": [
       "Licz",
@@ -434,7 +440,7 @@
     "ogLocale": "sv_SE",
     "path": "/sv/",
     "rootPath": "../",
-    "title": "Resultattavla: För Alla Spel - Upp till 8 spelare · Spel",
+    "title": "Resultattavla: För Alla Spel - Kubb, Mölkky, Biljard & Pingis",
     "appName": "Resultattavla",
     "heroTitle": [
       "Räkna",
@@ -458,7 +464,7 @@
     "ogLocale": "hi_IN",
     "path": "/hi/",
     "rootPath": "../",
-    "title": "स्कोरबोर्ड: हर गेम का स्कोर - 8 टीम तक · कैरम, बैडमिंटन",
+    "title": "स्कोरबोर्ड: हर गेम का स्कोर - कैरम, बैडमिंटन, कबड्डी & ताश",
     "appName": "स्कोरबोर्ड",
     "heroTitle": [
       "हर स्कोर",
@@ -481,7 +487,7 @@
     "ogLocale": "uk_UA",
     "path": "/uk/",
     "rootPath": "../",
-    "title": "Табло Додаток - Рахунок будь-якої гри",
+    "title": "Табло: Рахунок Будь-якої Гри - Більярд, Дартс, Настільні ігри",
     "appName": "Табло",
     "heroTitle": [
       "Рахунок",
@@ -505,7 +511,7 @@
     "ogLocale": "da_DK",
     "path": "/da/",
     "rootPath": "../",
-    "title": "Scoreboard App - Point i alle spil",
+    "title": "Scoreboard: Til alle spil - Kubb, Dart, Bordtennis, Mölkky",
     "appName": "Scoreboard",
     "heroTitle": [
       "Point i",
@@ -529,7 +535,7 @@
     "ogLocale": "no_NO",
     "path": "/no/",
     "rootPath": "../",
-    "title": "Scoreboard App - Poeng i alle spill",
+    "title": "Scoreboard: For alle spill - Kubb, Dart, Bordtennis, Mölkky",
     "appName": "Scoreboard",
     "heroTitle": [
       "Poeng i",
@@ -553,7 +559,7 @@
     "ogLocale": "fi_FI",
     "path": "/fi/",
     "rootPath": "../",
-    "title": "Tulostaulu Sovellus - Pisteet kaikkiin peleihin",
+    "title": "Tulostaulu: Kaikkiin peleihin - Mölkky, Kubb, Tikka & Petankki",
     "appName": "Tulostaulu",
     "heroTitle": [
       "Pisteet",
@@ -577,7 +583,7 @@
     "ogLocale": "cs_CZ",
     "path": "/cs/",
     "rootPath": "../",
-    "title": "Scoreboard Aplikace - Skóre v každé hře",
+    "title": "Scoreboard: Pro každou hru - Hokej, Šipky, Petanque & Kubb",
     "appName": "Scoreboard",
     "heroTitle": [
       "Skóre",
@@ -601,7 +607,7 @@
     "ogLocale": "el_GR",
     "path": "/el/",
     "rootPath": "../",
-    "title": "Scoreboard Εφαρμογή - Σκορ σε κάθε παιχνίδι",
+    "title": "Scoreboard: Σκορ Παιχνιδιών - Τάβλι, Πέτανκ, Βελάκια, Κάρτες",
     "appName": "Scoreboard",
     "heroTitle": [
       "Σκορ",
@@ -625,7 +631,7 @@
     "ogLocale": "ro_RO",
     "path": "/ro/",
     "rootPath": "../",
-    "title": "Scoreboard Aplicație - Scor pentru orice joc",
+    "title": "Scoreboard: Pentru orice joc - Biliard, Oină, Darts, Petanque",
     "appName": "Scoreboard",
     "heroTitle": [
       "Scor pentru",
@@ -649,8 +655,8 @@
     "ogLocale": "hu_HU",
     "path": "/hu/",
     "rootPath": "../",
-    "title": "Scoreboard Alkalmazás - Pontok minden játékban",
-    "appName": "Scoreboard",
+    "title": "Pontszámláló: Minden Játékhoz - Darts, Biliárd, Petanque, Kubb",
+    "appName": "Pontszámláló",
     "heroTitle": [
       "Pontok",
       "minden",
@@ -673,7 +679,7 @@
     "ogLocale": "ms_MY",
     "path": "/ms/",
     "rootPath": "../",
-    "title": "Scoreboard Aplikasi - Skor untuk semua permainan",
+    "title": "Scoreboard: Skor Sebarang Game - Badminton, Dart, Karom, Takraw",
     "appName": "Scoreboard",
     "heroTitle": [
       "Skor untuk",
