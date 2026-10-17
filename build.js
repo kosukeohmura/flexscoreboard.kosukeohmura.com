@@ -52,6 +52,10 @@ function buildAppStoreUrl(lang) {
   return `https://apps.apple.com/${regionCode}/app/apple-store/id1453457844?pt=119669481&ct=lp_${langParam}&mt=8`;
 }
 
+function buildPlayStoreUrl() {
+  return 'https://play.google.com/store/apps/details?id=com.kosukeohmura.flexscoreboard';
+}
+
 function buildSitemap() {
   const today = new Date().toISOString().split('T')[0];
   const urls = languages.map(lang => {
@@ -102,6 +106,7 @@ function buildPage(lang) {
     '{{hreflangTags}}': buildHreflangTags(),
     '{{langOptions}}': buildLangOptions(lang),
     '{{appStoreUrl}}': buildAppStoreUrl(lang),
+    '{{playStoreUrl}}': buildPlayStoreUrl(),
   };
 
   for (const [placeholder, value] of Object.entries(replacements)) {
