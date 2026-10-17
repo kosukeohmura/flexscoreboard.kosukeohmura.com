@@ -230,6 +230,13 @@
       width: auto;
     }
 
+    .download-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
     /* Stats Section */
     .stats {
       display: flex;
@@ -516,6 +523,10 @@
       margin: 0 0.5rem;
     }
 
+    .footer-legal {
+      margin-top: 1rem;
+    }
+
     .footer a {
       color: var(--accent);
       text-decoration: none;
@@ -670,6 +681,10 @@
         margin-bottom: 2rem;
       }
 
+      .download-buttons {
+        justify-content: center;
+      }
+
       .download-button img {
         height: 50px;
       }
@@ -753,9 +768,14 @@
         </div>
       </div>
 
-      <a href="https://apps.apple.com/pt/app/apple-store/id1453457844?pt=119669481&ct=lp_ptpt&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
-        <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
-      </a>
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/pt/app/apple-store/id1453457844?pt=119669481&ct=lp_ptpt&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kosukeohmura.flexscoreboard" class="download-button" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="googleplay.png" alt="Get it on Google Play" width="202" height="60">
+        </a>
+      </div>
     </div>
 
     <div class="phone-section">
@@ -841,6 +861,7 @@
       <span class="footer-separator">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">Contacto</a>
     </div>
+    <p class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 
   <!-- Theme Switcher -->

@@ -29,6 +29,7 @@ Source files are at root. All files in `docs/` are generated and should not be e
 1. Edit `template.html` or `translations.json` (text, adding a language)
 2. Run `node build.js` to regenerate all pages
 3. (Optional, for new languages) Download localized App Store badge from [Apple Marketing Resources](https://developer.apple.com/app-store/marketing/guidelines/) and add SVG to `docs/<lang>/`
+4. `docs/<lang>/googleplay.png` is the localized "Get it on Google Play" badge from [Google's badge page](https://play.google.com/intl/en_us/badges/), trimmed of its transparent margin (`magick in.png -alpha set -trim +repage -strip out.png`) so it measures the same height as the App Store badge. Google has no Ukrainian badge, so `docs/uk/` carries the English one. Google's guidelines require the Play badge to be at least as large as the other store badges and to keep a quarter of its height clear around it.
 
 ## iPhone Screenshot
 
