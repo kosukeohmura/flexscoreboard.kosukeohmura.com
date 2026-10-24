@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>점수판: 모든 스포츠와 게임 점수를 기록 - 당구・다트・탁구・배드민턴・보드게임・족구・카드게임에 최적</title>
-  <meta name="description" content="iPhone 및 iPad 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 에서 무료 다운로드.">
+  <meta name="description" content="iPhone, iPad 및 Android 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 및 Google Play 에서 무료 다운로드.">
 
   <link rel="icon" href="../favicon.ico">
 
@@ -51,7 +51,7 @@
   <meta property="og:url" content="https://flexscoreboard.kosukeohmura.com/ko/">
   <meta property="og:site_name" content="점수판">
   <meta property="og:title" content="점수판: 모든 스포츠와 게임 점수를 기록 - 당구・다트・탁구・배드민턴・보드게임・족구・카드게임에 최적">
-  <meta property="og:description" content="iPhone 및 iPad 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 에서 무료 다운로드.">
+  <meta property="og:description" content="iPhone, iPad 및 Android 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 및 Google Play 에서 무료 다운로드.">
   <meta property="og:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="256">
@@ -61,7 +61,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="점수판: 모든 스포츠와 게임 점수를 기록 - 당구・다트・탁구・배드민턴・보드게임・족구・카드게임에 최적">
-  <meta name="twitter:description" content="iPhone 및 iPad 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 에서 무료 다운로드.">
+  <meta name="twitter:description" content="iPhone, iPad 및 Android 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 및 Google Play 에서 무료 다운로드.">
   <meta name="twitter:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta name="twitter:image:alt" content="점수판 app icon">
 
@@ -71,9 +71,9 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "점수판",
-    "description": "iPhone 및 iPad 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 에서 무료 다운로드.",
+    "description": "iPhone, iPad 및 Android 용 무료 스코어보드 앱. 탁구, 당구, 보드게임 등에 적합. 최대 12 팀 지원, 타이머 내장. App Store 및 Google Play 에서 무료 다운로드.",
     "image": "https://flexscoreboard.kosukeohmura.com/appicon.webp",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, Android",
     "applicationCategory": "SportsApplication",
     "applicationSubCategory": "UtilitiesApplication",
     "downloadUrl": "https://apps.apple.com/kr/app/apple-store/id1453457844?pt=119669481&ct=lp_ko&mt=8",
@@ -228,6 +228,13 @@
     .download-button img {
       height: 60px;
       width: auto;
+    }
+
+    .download-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
     }
 
     /* Stats Section */
@@ -516,6 +523,10 @@
       margin: 0 0.5rem;
     }
 
+    .footer-legal {
+      margin-top: 1rem;
+    }
+
     .footer a {
       color: var(--accent);
       text-decoration: none;
@@ -670,6 +681,10 @@
         margin-bottom: 2rem;
       }
 
+      .download-buttons {
+        justify-content: center;
+      }
+
       .download-button img {
         height: 50px;
       }
@@ -752,9 +767,14 @@
         </div>
       </div>
 
-      <a href="https://apps.apple.com/kr/app/apple-store/id1453457844?pt=119669481&ct=lp_ko&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
-        <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
-      </a>
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/kr/app/apple-store/id1453457844?pt=119669481&ct=lp_ko&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kosukeohmura.flexscoreboard" class="download-button" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="googleplay.png" alt="Get it on Google Play" width="202" height="60">
+        </a>
+      </div>
     </div>
 
     <div class="phone-section">
@@ -840,6 +860,7 @@
       <span class="footer-separator">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">문의하기</a>
     </div>
+    <p class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 
   <!-- Theme Switcher -->

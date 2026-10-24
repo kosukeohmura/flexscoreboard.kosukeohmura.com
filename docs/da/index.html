@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scoreboard: Til alle spil - Kubb, Dart, Bordtennis, Mölkky</title>
-  <meta name="description" content="Gratis scoreboard-app til iPhone og iPad. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store.">
+  <meta name="description" content="Gratis scoreboard-app til iPhone, iPad og Android. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store og Google Play.">
 
   <link rel="icon" href="../favicon.ico">
 
@@ -51,7 +51,7 @@
   <meta property="og:url" content="https://flexscoreboard.kosukeohmura.com/da/">
   <meta property="og:site_name" content="Scoreboard">
   <meta property="og:title" content="Scoreboard: Til alle spil - Kubb, Dart, Bordtennis, Mölkky">
-  <meta property="og:description" content="Gratis scoreboard-app til iPhone og iPad. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store.">
+  <meta property="og:description" content="Gratis scoreboard-app til iPhone, iPad og Android. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store og Google Play.">
   <meta property="og:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="256">
@@ -61,7 +61,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Scoreboard: Til alle spil - Kubb, Dart, Bordtennis, Mölkky">
-  <meta name="twitter:description" content="Gratis scoreboard-app til iPhone og iPad. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store.">
+  <meta name="twitter:description" content="Gratis scoreboard-app til iPhone, iPad og Android. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store og Google Play.">
   <meta name="twitter:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta name="twitter:image:alt" content="Scoreboard app icon">
 
@@ -71,9 +71,9 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Scoreboard",
-    "description": "Gratis scoreboard-app til iPhone og iPad. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store.",
+    "description": "Gratis scoreboard-app til iPhone, iPad og Android. Perfekt til bordtennis, pool, brætspil og mere. Op til 12 hold, indbygget timer. Download gratis på App Store og Google Play.",
     "image": "https://flexscoreboard.kosukeohmura.com/appicon.webp",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, Android",
     "applicationCategory": "SportsApplication",
     "applicationSubCategory": "UtilitiesApplication",
     "downloadUrl": "https://apps.apple.com/dk/app/apple-store/id1453457844?pt=119669481&ct=lp_da&mt=8",
@@ -228,6 +228,13 @@
     .download-button img {
       height: 60px;
       width: auto;
+    }
+
+    .download-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
     }
 
     /* Stats Section */
@@ -516,6 +523,10 @@
       margin: 0 0.5rem;
     }
 
+    .footer-legal {
+      margin-top: 1rem;
+    }
+
     .footer a {
       color: var(--accent);
       text-decoration: none;
@@ -670,6 +681,10 @@
         margin-bottom: 2rem;
       }
 
+      .download-buttons {
+        justify-content: center;
+      }
+
       .download-button img {
         height: 50px;
       }
@@ -753,9 +768,14 @@
         </div>
       </div>
 
-      <a href="https://apps.apple.com/dk/app/apple-store/id1453457844?pt=119669481&ct=lp_da&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
-        <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
-      </a>
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/dk/app/apple-store/id1453457844?pt=119669481&ct=lp_da&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kosukeohmura.flexscoreboard" class="download-button" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="googleplay.png" alt="Get it on Google Play" width="202" height="60">
+        </a>
+      </div>
     </div>
 
     <div class="phone-section">
@@ -841,6 +861,7 @@
       <span class="footer-separator">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">Kontakt</a>
     </div>
+    <p class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 
   <!-- Theme Switcher -->

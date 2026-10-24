@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scoreboard: どんな試合もスコア管理・得点記録 - ダーツ・卓球・バドミントン・ビリヤード・ボドゲ・モルック対応</title>
-  <meta name="description" content="iPhone・iPad 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store で今すぐダウンロード。">
+  <meta name="description" content="iPhone・iPad・Android 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store・Google Play で今すぐダウンロード。">
 
   <link rel="icon" href="../favicon.ico">
 
@@ -51,7 +51,7 @@
   <meta property="og:url" content="https://flexscoreboard.kosukeohmura.com/ja/">
   <meta property="og:site_name" content="Scoreboard">
   <meta property="og:title" content="Scoreboard: どんな試合もスコア管理・得点記録 - ダーツ・卓球・バドミントン・ビリヤード・ボドゲ・モルック対応">
-  <meta property="og:description" content="iPhone・iPad 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store で今すぐダウンロード。">
+  <meta property="og:description" content="iPhone・iPad・Android 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store・Google Play で今すぐダウンロード。">
   <meta property="og:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="256">
@@ -61,7 +61,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Scoreboard: どんな試合もスコア管理・得点記録 - ダーツ・卓球・バドミントン・ビリヤード・ボドゲ・モルック対応">
-  <meta name="twitter:description" content="iPhone・iPad 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store で今すぐダウンロード。">
+  <meta name="twitter:description" content="iPhone・iPad・Android 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store・Google Play で今すぐダウンロード。">
   <meta name="twitter:image" content="https://flexscoreboard.kosukeohmura.com/appicon.webp">
   <meta name="twitter:image:alt" content="Scoreboard app icon">
 
@@ -71,9 +71,9 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Scoreboard",
-    "description": "iPhone・iPad 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store で今すぐダウンロード。",
+    "description": "iPhone・iPad・Android 対応の無料スコアボードアプリ。卓球、ビリヤード、モルック、ボードゲームなどのスコアを簡単記録。12 チーム対応、タイマー内蔵。App Store・Google Play で今すぐダウンロード。",
     "image": "https://flexscoreboard.kosukeohmura.com/appicon.webp",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, Android",
     "applicationCategory": "SportsApplication",
     "applicationSubCategory": "UtilitiesApplication",
     "downloadUrl": "https://apps.apple.com/jp/app/apple-store/id1453457844?pt=119669481&ct=lp_ja&mt=8",
@@ -228,6 +228,13 @@
     .download-button img {
       height: 60px;
       width: auto;
+    }
+
+    .download-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
     }
 
     /* Stats Section */
@@ -516,6 +523,10 @@
       margin: 0 0.5rem;
     }
 
+    .footer-legal {
+      margin-top: 1rem;
+    }
+
     .footer a {
       color: var(--accent);
       text-decoration: none;
@@ -670,6 +681,10 @@
         margin-bottom: 2rem;
       }
 
+      .download-buttons {
+        justify-content: center;
+      }
+
       .download-button img {
         height: 50px;
       }
@@ -752,9 +767,14 @@
         </div>
       </div>
 
-      <a href="https://apps.apple.com/jp/app/apple-store/id1453457844?pt=119669481&ct=lp_ja&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
-        <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
-      </a>
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/jp/app/apple-store/id1453457844?pt=119669481&ct=lp_ja&mt=8" class="download-button" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="downloadonappstore.svg" alt="Download on the App Store" width="280" height="83">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kosukeohmura.flexscoreboard" class="download-button" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="googleplay.png" alt="Get it on Google Play" width="202" height="60">
+        </a>
+      </div>
     </div>
 
     <div class="phone-section">
@@ -840,6 +860,7 @@
       <span class="footer-separator">·</span>
       <a href="mailto:flexscoreboard@kosukeohmura.com" class="contact-link">お問い合わせ</a>
     </div>
+    <p class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 
   <!-- Theme Switcher -->
